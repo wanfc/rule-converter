@@ -63,9 +63,16 @@ jobs:
       - name: Run Conversion Script
         run: python -u convert_rules.py
         
-      # 专门计算时间并存入环境变量
+      # 先计算时间，并存入变量
+      # 获取中国时间 (北京时间)
+      # 如果少了这一步，下面就会显示成 []
       - name: Get Current Date
-        run: echo "TIME_NOW=$(date -u +'%Y-%m-%d %H:%M:%S' UTC)" >> $GITHUB_ENV
+        run: |
+          # TZ=Asia/Shanghai 指定时区为上海/北京
+          # CST 代表 China Standard Time
+          CURRENT_TIME=$(TZ=Asia/Shanghai date +'%Y-%m-%d %H:%M:%S CST')
+          # 存入 GitHub 的环境变量里
+          echo "TIME_NOW=$CURRENT_TIME" >> $GITHUB_ENV
 
       # 第五步：提交并推送更改 (Git Auto Commit)
       - name: Commit and Push Changes
@@ -87,6 +94,7 @@ jobs:
           # ⚡️ [建议] 确保在这个 Action 运行前，你的 Python 脚本已经自动创建了 QuantumultX 和 Mihomo 文件夹
 
           # 如果脚本没创建文件夹，Git 可能会因为找不到路径提示 Nothing to commit，这属于正常现象
+
 
 
 

@@ -62,13 +62,17 @@ jobs:
       # 方便你万一报错时排查卡在哪一步
       - name: Run Conversion Script
         run: python -u convert_rules.py
+        
+      # 专门计算时间并存入环境变量
+      - name: Get Current Date
+        run: echo "TIME_NOW=$(date -u +'%Y-%m-%d %H:%M:%S' UTC)" >> $GITHUB_ENV
 
       # 第五步：提交并推送更改 (Git Auto Commit)
       - name: Commit and Push Changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          # 提交信息带上时间戳，方便查看历史
-          commit_message: "🔄 Auto-update rules [$(date -u +'%Y-%m-%d %H:%M:%S' UTC)]"
+          # 提交信息带上时间戳，方便查看历史 ⚡️ 这里使用 ${{ env.TIME_NOW }} 来引用上面算好的时间
+          commit_message: "🔄 Auto-update rules [${{ env.TIME_NOW }}]"
           branch: main
           
           # ⚡️ [修改重点] 改为 "." (代表所有变化)，或者直接删除这一行
@@ -83,6 +87,7 @@ jobs:
           # ⚡️ [建议] 确保在这个 Action 运行前，你的 Python 脚本已经自动创建了 QuantumultX 和 Mihomo 文件夹
 
           # 如果脚本没创建文件夹，Git 可能会因为找不到路径提示 Nothing to commit，这属于正常现象
+
 
 
 

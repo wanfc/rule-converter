@@ -668,19 +668,20 @@ def smart_detect(content, strict_mode=False):
 
     # ================= 阶段三：纯文本智能探测 =================
     # 处理像 "google.com" 或 "1.1.1.1" 这种无前缀的写法
-
-    # 1. 安全检查：如果包含非法字符，说明不是纯域名/IP，丢弃
-    # 比如包含 * (通配符)、= (赋值)、/ (路径) 等，通常是正则或没清洗干净的垃圾
-    if any(char in content for char in ['/', '*', '=', '|', ':', '(', ')', '[', ']']):
-        return None, None
-
-    # 2. 尝试识别是否为 IP 地址
+    # ⚡️【修复点】先尝试识别 IP，因为 IP 包含 / 和 : 是合法的
     try:
+        # strict=False 允许单纯的 IP 地址不带掩码 (如 1.1.1.1)
+        # 只要能被 ipaddress 库解析，就认为是合法的 IP
         net = ipaddress.ip_network(content, strict=False)
         if net.version == 4: return 'ipv4', str(net)
         elif net.version == 6: return 'ipv6', str(net)
     except ValueError:
-        pass # 不是 IP，继续往下走
+        pass # 不是 IP，继续往下检测是否为域名
+
+    # ⚡️不是 IP 之后，再进行非法字符拦截 (针对域名)
+    # 比如包含 * (通配符)、= (赋值)、/ (路径) 等，通常是正则或没清洗干净的垃圾
+    if any(char in content for char in ['/', '*', '=', '|', ':', '(', ')', '[', ']']):
+        return None, None
 
     # 3. 处理带点的域名后缀写法
     # Meta/Surge 格式：+.google.com -> 域名后缀
@@ -875,3 +876,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

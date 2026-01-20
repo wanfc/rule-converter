@@ -28,7 +28,6 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.10' # 3.10 是目前兼容性非常好的版本
-          cache: 'pip' # ⚡️ [优化] 开启 pip 缓存，加快第二次及以后的运行速度
           
       # 第三步：安装依赖
       - name: Install Dependencies
@@ -82,4 +81,5 @@ jobs:
           # ⚡️ [建议] 确保在这个 Action 运行前，你的 Python 脚本已经自动创建了 QuantumultX 和 Mihomo 文件夹
 
           # 如果脚本没创建文件夹，Git 可能会因为找不到路径提示 Nothing to commit，这属于正常现象
+
 

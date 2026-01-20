@@ -71,12 +71,11 @@ jobs:
           commit_message: "🔄 Auto-update rules [$(date -u +'%Y-%m-%d %H:%M:%S' UTC)]"
           branch: main
           
-          # ⚡️ [优化] 这里的 file_pattern 极其重要
-          # 1. 监听 QuantumultX 和 Mihomo 文件夹的变化
-          # 即使文件夹在第四步被删了，Action 也会检测到“文件消失”的变化并提交
-          # 确保只监听这两个输出目录，防止误提交其他文件（比如临时的 .pyc 文件）
-          # 2. 🆕 新增 error.txt：如果有源失效生成了报错文件，也一起推送到仓库方便查看
-          file_pattern: 'QuantumultX/* Mihomo/* error.txt' 
+          # ⚡️ [修改重点] 改为 "." (代表所有变化)，或者直接删除这一行
+          # 这样：
+          # 1. 如果 error.txt 存在，它会被提交。
+          # 2. 如果 error.txt 不存在，Git 就只提交文件夹，不会报错说找不到文件。
+          file_pattern: .
           
           # 禁止在仓库没有变化时报错（比如今天规则源没更新，文件没有任何变化（增量更新检测到MD5一致），不报错，直接跳过）
           skip_dirty_check: false
@@ -84,6 +83,7 @@ jobs:
           # ⚡️ [建议] 确保在这个 Action 运行前，你的 Python 脚本已经自动创建了 QuantumultX 和 Mihomo 文件夹
 
           # 如果脚本没创建文件夹，Git 可能会因为找不到路径提示 Nothing to commit，这属于正常现象
+
 
 
 

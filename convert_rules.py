@@ -17,15 +17,15 @@ SOURCE_LIST = [
         "type": "domain",        # 标记这个文件是域名列表
         "strict": True           # 开启严格模式
     },
-    {
-        # 示例2：去广告/混合源（通常只写 baidu.com 但隐含意思是杀全家）
-        # 建议关闭 strict: False，这样所有纯域名都会被视为“后缀匹配”，防止漏杀子域名
-        # "url": "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/refs/heads/master/anti-ad-clash.yaml",
-        # "name": "anti_ad",
-        # "policy": "🆎 广告",
-        # "type": "domain",
-        # "strict": False          # 关闭严格模式（默认推荐）
-    },
+    # {
+    #     示例2：去广告/混合源（通常只写 baidu.com 但隐含意思是杀全家）
+    #     建议关闭 strict: False，这样所有纯域名都会被视为“后缀匹配”，防止漏杀子域名
+    #     "url": "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/refs/heads/master/anti-ad-clash.yaml",
+    #     "name": "anti_ad",
+    #     "policy": "🆎 广告",
+    #     "type": "domain",
+    #     "strict": False          # 关闭严格模式（默认推荐）
+    # },
     {
         # 示例3：IP 列表源
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/private.list",

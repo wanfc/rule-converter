@@ -38,6 +38,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests pyyaml
         # 如果你的脚本还需要其他库，在这里加，比如 pip install pytz
+      # 🔍 【新增这个调试步骤】让机器人把它看到的文件列表打印出来，这样你就知道文件到底去哪了
+      - name: Check File List (Debug)
+        run: ls -R
 
       # [已删除] 原“第四步：暴力清理旧规则”
       # # 第四步：暴力清理旧规则 (核心逻辑)
@@ -81,5 +84,6 @@ jobs:
           # ⚡️ [建议] 确保在这个 Action 运行前，你的 Python 脚本已经自动创建了 QuantumultX 和 Mihomo 文件夹
 
           # 如果脚本没创建文件夹，Git 可能会因为找不到路径提示 Nothing to commit，这属于正常现象
+
 
 

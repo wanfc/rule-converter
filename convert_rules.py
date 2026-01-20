@@ -123,7 +123,7 @@ SOURCE_LIST = [
         "name": "apple_ip",
         "policy": "🍎 Apple",
         "type": "ip",
-        "strict": True
+        "strict": False
     },
     {
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-ai-!cn.list",
@@ -333,7 +333,7 @@ SOURCE_LIST = [
         "name": "telegram_ip",
         "policy": "📮 Telegram",
         "type": "ip",
-        "strict": True
+        "strict": False
     },
     {
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/adguard.list",
@@ -382,7 +382,7 @@ SOURCE_LIST = [
         "name": "twitter_ip",
         "policy": "🍉 外文社媒",
         "type": "domain",
-        "strict": True
+        "strict": False
     },
     {
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/nvidia.list",
@@ -445,7 +445,7 @@ SOURCE_LIST = [
         "name": "bilibili_ip",
         "policy": "🍋 国内娱乐媒体",
         "type": "ip",
-        "strict": True
+        "strict": False
     },
     {
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/google.list",
@@ -459,7 +459,7 @@ SOURCE_LIST = [
         "name": "google_ip",
         "policy": "🧀 Google",
         "type": "ip",
-        "strict": True
+        "strict": False
     },
     {
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-porn.list",
@@ -522,7 +522,7 @@ SOURCE_LIST = [
         "name": "cn_ip",
         "policy": "🏰 中国",
         "type": "ip",
-        "strict": True
+        "strict": False
     },
 ]
 
@@ -533,13 +533,21 @@ ERROR_LOG_FILE = "error.txt" # 错误日志文件名
 
 def create_dirs():
     """
-    功能：检查并创建输出目录。
-    如果目录不存在，就新建一个，防止保存文件时报错。
+    检查并创建输出目录及其子目录 (IP/Domain)。
     """
-    if not os.path.exists(DIR_QX):
-        os.makedirs(DIR_QX)
-    if not os.path.exists(DIR_MIHOMO):
-        os.makedirs(DIR_MIHOMO)
+    # 基础目录
+    dirs_to_create = [
+        DIR_QX, 
+        DIR_MIHOMO,
+        os.path.join(DIR_QX, "IP"),
+        os.path.join(DIR_QX, "Domain"),
+        os.path.join(DIR_MIHOMO, "IP"),
+        os.path.join(DIR_MIHOMO, "Domain")
+    ]
+    
+    for d in dirs_to_create:
+        if not os.path.exists(d):
+            os.makedirs(d)
 
 def clean_old_error_log():
     """运行开始前，清理旧的错误日志"""
@@ -556,7 +564,7 @@ def calculate_md5(text):
 
 def fetch_content(url):
     """
-    功能：从网络下载源文件的内容。
+    功能：从网络下载源文件的内容，带超时重试机制。
     """
     print(f"📥 正在下载: {url}")
     try:
@@ -814,11 +822,11 @@ def main():
     """
     # 1. 准备目录
     create_dirs()
-    # 🆕 [新增] 运行前清理旧错误日志
+    # 运行前清理旧错误日志
     clean_old_error_log() 
     print("🚀 开始执行转换脚本...")
     
-    failed_urls = [] # 🆕 [新增] 用于存储失败的 URL
+    failed_urls = [] # 用于存储失败的 URL
 
     # 2. 遍历配置列表，逐个处理
     for item in SOURCE_LIST:
@@ -834,12 +842,15 @@ def main():
         print(f"  - 类型: {req_type}")
         print(f"  - 策略: {policy}")
         print(f"  - 严格模式: {'开启' if is_strict else '关闭'}")
+
+        # 根据类型决定存放在哪个子目录
+        # 如果 type 是 'ip'，存入 'IP' 文件夹，否则存入 'Domain' 文件夹
+        sub_folder = "IP" if req_type == 'ip' else "Domain"
         
         # 下载内容
-        content = fetch_content(url)
-        
+        content = fetch_content(url)        
         if not content:
-            # 🆕 [修改] 容灾逻辑
+            # 容灾逻辑
             # 如果下载失败：
             # 1. 记录 URL 到失败列表
             # 2. 打印提示：保留旧文件
@@ -851,18 +862,25 @@ def main():
         # 核心转换
         res = process_rules(content, req_type, policy, is_strict)
         
-        # === 保存文件 ===
-        # 1. 保存 Quantumult X 格式 (带策略名)
-        save_text(os.path.join(DIR_QX, f"{name}.list"), res['qx'])
+        # === 保存文件 (路径加入了 sub_folder) ===
+        # QX 路径构造
+        path_qx = os.path.join(DIR_QX, sub_folder, f"{name}.list")
+        save_text(path_qx, res['qx'])
+        
         if req_type == 'ip':
-            save_text(os.path.join(DIR_QX, f"{name}_no-resolve.list"), res['qx_nr'])
+            # IP 类型额外保存一个 no-resolve 版本
+            path_qx_nr = os.path.join(DIR_QX, sub_folder, f"{name}_no-resolve.list")
+            save_text(path_qx_nr, res['qx_nr'])
 
-        # 2. 保存 Mihomo/通用 格式 (无策略名)
-        save_text(os.path.join(DIR_MIHOMO, f"{name}.list"), res['mihomo'])
+        # Mihomo 路径构造
+        path_mihomo = os.path.join(DIR_MIHOMO, sub_folder, f"{name}.list")
+        save_text(path_mihomo, res['mihomo'])
+        
         if req_type == 'ip':
-            save_text(os.path.join(DIR_MIHOMO, f"{name}_no-resolve.list"), res['mihomo_nr'])
+            path_mihomo_nr = os.path.join(DIR_MIHOMO, sub_folder, f"{name}_no-resolve.list")
+            save_text(path_mihomo_nr, res['mihomo_nr'])
 
-    # 🆕 [新增] 脚本结束前，检查是否有失败记录
+    # 脚本结束前，检查是否有失败记录
     if failed_urls:
         print(f"\n⚠️ 警告：有 {len(failed_urls)} 个源处理失败，已写入 {ERROR_LOG_FILE}")
         try:
@@ -876,4 +894,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 

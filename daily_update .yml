@@ -1,0 +1,80 @@
+name: Update Rule Sets # 工作流名称
+
+# 触发机制
+on:
+  workflow_dispatch: # 1. 允许你在 Actions 页面手动点击按钮触发（调试神器）
+  schedule:
+    # 2. 定时触发：北京时间每天 15:00 运行
+    # GitHub 使用 UTC 时间，07:00 UTC + 8 = 15:00 北京时间
+    - cron: '0 7 * * *' 
+
+jobs:
+  convert-and-push:
+    runs-on: ubuntu-latest # 使用最新的 Ubuntu 虚拟环境
+    
+    # ⚠️ 权限关键点：必须赋予写权限，否则无法推送到仓库
+    permissions:
+      contents: write  
+
+    steps:
+      # 第一步：拉取仓库代码
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        
+      # 第二步：配置 Python 环境
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10' # 3.10 是目前兼容性非常好的版本
+          cache: 'pip' # ⚡️ [优化] 开启 pip 缓存，加快第二次及以后的运行速度
+          
+      # 第三步：安装依赖
+      - name: Install Dependencies
+        # ⚡️ [优化] 显式升级 pip，并安装脚本需要的所有库
+        # 如果你脚本里用了 time/json/os 这种内置库不需要安装
+        # 如果脚本后续加了 tqdm (进度条) 或 pytz (时区)，记得在这里补上
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests pyyaml
+
+      # [已删除] 原“第四步：暴力清理旧规则”
+      # # 第四步：暴力清理旧规则 (核心逻辑)
+      # # 💡 逻辑解释：
+      # # 先把 QuantumultX 和 Mihomo 文件夹彻底删掉。
+      # # 然后脚本运行，只生成当前有效的规则。
+      # - name: Purge Old Output Folders
+      #   run: |
+      #     rm -rf QuantumultX
+      #     rm -rf Mihomo
+      #     echo "🧹 已彻底清理旧文件夹，准备重新生成..."
+      
+      # 为了实现增量更新和容灾保护，不再主动删除旧文件夹。
+      # 如果脚本下载失败，本地旧文件会保留，Git 就不会删除它们。
+
+      # 第四步：运行 Python 转换脚本
+      # ⚡️ [优化] 加上 -u 参数 (unbuffered) 让日志实时显示
+      # 作用：让 Python 的 print 输出实时显示在 GitHub Actions 日志里，而不是跑完了一次性吐出来
+      # 方便你万一报错时排查卡在哪一步
+      - name: Run Conversion Script
+        run: python -u convert_rules.py
+
+      # 第五步：提交并推送更改
+      - name: Commit and Push Changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          # 提交信息带上时间戳，方便查看历史
+          commit_message: "🔄 Auto-update rules [$(date -u +'%Y-%m-%d %H:%M:%S' UTC)]"
+          branch: main
+          
+          # ⚡️ [优化] 这里的 file_pattern 极其重要
+          # 1. 监听 QuantumultX 和 Mihomo 文件夹的变化
+          # 即使文件夹在第四步被删了，Action 也会检测到“文件消失”的变化并提交
+          # 确保只监听这两个输出目录，防止误提交其他文件（比如临时的 .pyc 文件）
+          # 2. 🆕 新增 error.txt：如果有源失效生成了报错文件，也一起推送到仓库方便查看
+          file_pattern: 'QuantumultX/* Mihomo/* error.txt' 
+          
+          # 禁止在仓库没有变化时报错（比如今天规则源没更新，生成的MD5一样，就不提交）
+          skip_dirty_check: false
+
+          # ⚡️ [建议] 确保在这个 Action 运行前，你的 Python 脚本已经自动创建了 QuantumultX 和 Mihomo 文件夹
+          # 如果脚本没创建文件夹，Git 可能会因为找不到路径提示 Nothing to commit，这属于正常现象

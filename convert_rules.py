@@ -64,21 +64,21 @@ SOURCE_LIST = [
     },
     {
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-dev-cn.list",
-        "name": "cd-cn_domain",
+        "name": "dev-cn_domain",
         "policy": "🥝 中区开发者",
         "type": "domain",
         "strict": True
     },
     {
-        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-dev%40cn.list",
-        "name": "cd@cn_domain",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-dev@cn.list",
+        "name": "dev@cn_domain",
         "policy": "🥝 全球开发者中国CDN",
         "type": "domain",
         "strict": True
     },
     {
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-dev.list",
-        "name": "cd_domain",
+        "name": "dev_domain",
         "policy": "🥝 全球开发者",
         "type": "domain",
         "strict": True
@@ -105,7 +105,7 @@ SOURCE_LIST = [
         "strict": True
     },
     {
-        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/apple%40cn.list",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/apple@cn.list",
         "name": "apple@cn_domain",
         "policy": "🍏 Apple中国",
         "type": "domain",
@@ -127,7 +127,7 @@ SOURCE_LIST = [
     },
     {
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-ai-!cn.list",
-        "name": "ai-!cn_domain",
+        "name": "ai!cn_domain",
         "policy": "🔆 国外AI",
         "type": "domain",
         "strict": True
@@ -140,7 +140,7 @@ SOURCE_LIST = [
         "strict": True
     },
     {
-        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/tencent%40!cn.list",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/tencent@!cn.list",
         "name": "tencent@!cn_domain",
         "policy": "🐧 腾讯国际",
         "type": "domain",
@@ -259,7 +259,7 @@ SOURCE_LIST = [
         "strict": True
     },
     {
-        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/paypal%40cn.list",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/paypal@cn.list",
         "name": "paypal@cn_domain",
         "policy": "💳 贝宝",
         "type": "domain",
@@ -273,7 +273,7 @@ SOURCE_LIST = [
         "strict": True
     },
     {
-        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-cryptocurrency%40cn.list",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-cryptocurrency@cn.list",
         "name": "crypto@cn_domain",
         "policy": "💶 国内加密货币",
         "type": "domain",
@@ -344,14 +344,14 @@ SOURCE_LIST = [
     },
     {
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-media-cn.list",
-        "name": "cm-cn_domain",
+        "name": "media-cn_domain",
         "policy": "🍞 中文传媒",
         "type": "domain",
         "strict": True
     },
     {
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-media.list",
-        "name": "cm_domain",
+        "name": "media_domain",
         "policy": "🍞 外文传媒",
         "type": "domain",
         "strict": True
@@ -365,14 +365,14 @@ SOURCE_LIST = [
     },
     {
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-social-media-cn.list",
-        "name": "csm-cn_domain",
+        "name": "socialmedia-cn_domain",
         "policy": "🍉 中文社媒",
         "type": "domain",
         "strict": True
     },
     {
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-social-media-!cn.list",
-        "name": "csm-!cn_domain",
+        "name": "socialmedia-!cn_domain",
         "policy": "🍉 外文社媒",
         "type": "domain",
         "strict": True
@@ -381,7 +381,7 @@ SOURCE_LIST = [
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/twitter.list",
         "name": "twitter_ip",
         "policy": "🍉 外文社媒",
-        "type": "domain",
+        "type": "ip",
         "strict": False
     },
     {
@@ -393,13 +393,13 @@ SOURCE_LIST = [
     },
     {
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-game-platforms-download.list",
-        "name": "gd_domain",
+        "name": "gamedownload_domain",
         "policy": "🕹️ 游戏下载",
         "type": "domain",
         "strict": True
     },
     {
-        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-games%40cn.list",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-games@cn.list",
         "name": "games@cn_domain",
         "policy": "🎮 国际游戏中区CDN",
         "type": "domain",
@@ -421,14 +421,14 @@ SOURCE_LIST = [
     },
     {
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-entertainment-cn.list",
-        "name": "ce-cn_domain",
+        "name": "entertainment-cn_domain",
         "policy": "🍋 国内娱乐媒体",
         "type": "domain",
         "strict": True
     },
     {
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-entertainment.list",
-        "name": "ce_domain",
+        "name": "entertainment_domain",
         "policy": "🍋 国外娱乐媒体",
         "type": "domain",
         "strict": True
@@ -470,7 +470,7 @@ SOURCE_LIST = [
     },
     {
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/adobe-activation.list",
-        "name": "adobe-jh_domain",
+        "name": "adobe-activation_domain",
         "policy": "🖍️ Adobe激活",
         "type": "domain",
         "strict": True
@@ -483,7 +483,7 @@ SOURCE_LIST = [
         "strict": True
     },
     {
-        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/microsoft%40cn.list",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/microsoft@cn.list",
         "name": "microsoft@cn_domain",
         "policy": "Ⓜ️ 微软中国",
         "type": "domain",
@@ -894,5 +894,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 

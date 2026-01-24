@@ -6,9 +6,10 @@ on:
   workflow_dispatch: # 1. 允许你在 Actions 页面手动点击按钮触发（调试神器）
   # 2. 定时触发 (计划任务)
   schedule:
-    # 2. 定时触发：北京时间每天 15:00 运行
-    # GitHub 使用 UTC 时间，07:00 UTC + 8 = 15:00 北京时间
-    - cron: '0 7 * * *' 
+    # 2. 每天 UTC 20:37 (北京时间 凌晨 04:37)
+    # 这是一个非常冷门且安全的时间
+    # GitHub 使用 UTC 时间，UTC + 8 = 北京时间
+    - cron: '37 20 * * *'
 
 jobs:
   convert-and-push:
@@ -94,6 +95,7 @@ jobs:
           # ⚡️ [建议] 确保在这个 Action 运行前，你的 Python 脚本已经自动创建了 QuantumultX 和 Mihomo 文件夹
 
           # 如果脚本没创建文件夹，Git 可能会因为找不到路径提示 Nothing to commit，这属于正常现象
+
 
 
 

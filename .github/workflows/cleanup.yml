@@ -2,8 +2,8 @@ name: Cleanup Old Runs
 
 on:
   schedule:
-    # 北京时间 00:00 = UTC 16:00 (前一天)
-    - cron: '0 16 * * *' 
+    # UTC 20:47 (即北京时间 次日凌晨 04:47)
+    - cron: '47 20 * * *'
   workflow_dispatch:
 
 jobs:
@@ -19,4 +19,5 @@ jobs:
           token: ${{ github.token }}
           repository: ${{ github.repository }}
           retain_days: 1        # 只保留最近 1 天的记录
+
           keep_minimum_runs: 3 # 至少保留最近 3 条（防止全删光了没法查错）

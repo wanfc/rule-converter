@@ -9,7 +9,8 @@ on:
     # 2. 每天 UTC 20:37 (北京时间 凌晨 04:37)
     # 这是一个非常冷门且安全的时间
     # GitHub 使用 UTC 时间，UTC + 8 = 北京时间
-    - cron: '37 20 * * *'
+    # - cron: '37 20 * * *'
+    - cron: '15 13 * * *'
 
 jobs:
   convert-and-push:

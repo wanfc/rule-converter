@@ -16,13 +16,6 @@
   policy: "🕰️ NTP"
   type: "domain"
   strict: True
-# 示例2：去广告/混合源（通常只写 baidu.com 但隐含意思是杀全家）
-# 建议关闭 strict: False，这样所有纯域名都会被视为“后缀匹配”，防止漏杀子域名
-- url: "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/refs/heads/master/anti-ad-clash.yaml"
-  name: "block_domain"
-  policy: "⛔️ 广告|阻断"
-  type: "domain"
-  strict: False          # 关闭严格模式（默认推荐）
 - url: "https://raw.githubusercontent.com/wanfc/rule/refs/heads/main/customize/cn_dns_domains.list"
   name: "cn_dns_domain"
   policy: "🔺 国内DNS"
@@ -43,6 +36,13 @@
   policy: "🔸™️国外DNS"
   type: "ip"
   strict: True
+  # 示例2：去广告/混合源（通常只写 baidu.com 但隐含意思是杀全家）
+# 建议关闭 strict: False，这样所有纯域名都会被视为“后缀匹配”，防止漏杀子域名
+- url: "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/refs/heads/master/anti-ad-clash.yaml"
+  name: "block_domain"
+  policy: "⛔️ 广告|阻断"
+  type: "domain"
+  strict: False          # 关闭严格模式（默认推荐）
 # ======================================================== 下载与P2P
 - url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-pt.list"
   name: "pt_domain"
@@ -407,7 +407,7 @@
   type: "domain"
   strict: True
 # ======================================================== 金融与加密
-- url: "https://raw.githubusercontent.com/wanfc/rule/refs/heads/main/BitgetWallet.yaml"
+- url: "https://raw.githubusercontent.com/wanfc/rule/refs/heads/main/BitgetWallet.list"
   name: "bitget_domain"
   policy: "💶™️加密货币"
   type: "domain"

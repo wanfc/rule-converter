@@ -66,6 +66,7 @@ HOST-SUFFIX, httpdns.kwd.inkuai.com, 🔺 国内DNS
 HOST-SUFFIX, apidns.kwd.inkuai.com, 🔺 国内DNS
 HOST, 114dns.com, 🔺 国内DNS
 HOST, doh.360.cn, 🔺 国内DNS
+HOST, dot.360.cn, 🔺 国内DNS
 HOST-SUFFIX, rubyfish.cn, 🔺 国内DNS
 HOST-SUFFIX, dns.rubyfish.cn, 🔺 国内DNS
 HOST-SUFFIX, httpdns.pro, 🔺 国内DNS

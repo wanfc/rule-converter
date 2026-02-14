@@ -66,6 +66,7 @@ DOMAIN-SUFFIX,httpdns.kwd.inkuai.com
 DOMAIN-SUFFIX,apidns.kwd.inkuai.com
 DOMAIN,114dns.com
 DOMAIN,doh.360.cn
+DOMAIN,dot.360.cn
 DOMAIN-SUFFIX,rubyfish.cn
 DOMAIN-SUFFIX,dns.rubyfish.cn
 DOMAIN-SUFFIX,httpdns.pro

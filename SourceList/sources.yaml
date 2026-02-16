@@ -412,11 +412,6 @@
   policy: "💶™️加密货币"
   type: "domain"
   strict: True
-- url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-cryptocurrency@cn.list"
-  name: "crypto@cn_domain"
-  policy: "💶 国内加密货币"
-  type: "domain"
-  strict: True
 - url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-cryptocurrency.list"
   name: "crypto_domain"
   policy: "💶™️加密货币"

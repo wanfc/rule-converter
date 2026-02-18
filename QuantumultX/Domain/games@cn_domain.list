@@ -15,6 +15,8 @@ HOST, lv.queniujq.cn, 🎮 国际游戏中区CDN
 HOST, xz.pphimalayanrt.com, 🎮 国际游戏中区CDN
 HOST-SUFFIX, steamchina.com, 🎮 国际游戏中区CDN
 HOST-SUFFIX, gstore.val.manlaxy.com, 🎮 国际游戏中区CDN
+HOST, uplaypc-s-ubisoft.cdn.ubi.com, 🎮 国际游戏中区CDN
+HOST-SUFFIX, yostar.cn, 🎮 国际游戏中区CDN
 HOST, gog.qtlglb.com, 🎮 国际游戏中区CDN
 HOST, gogalaxy.gog-statics.com, 🎮 国际游戏中区CDN
 HOST, menu-static.gog-statics.com, 🎮 国际游戏中区CDN
@@ -23,7 +25,6 @@ HOST, static-login.gog-statics.com, 🎮 国际游戏中区CDN
 HOST, www4-static.gog-statics.com, 🎮 国际游戏中区CDN
 HOST, gog-cdn-fastly.gog.com, 🎮 国际游戏中区CDN
 HOST, gog-cdn.akamaized.net, 🎮 国际游戏中区CDN
-HOST-SUFFIX, xboxlive.cn, 🎮 国际游戏中区CDN
 HOST-SUFFIX, bluearchive-cn.com, 🎮 国际游戏中区CDN
 HOST-SUFFIX, legendofzelda.cn, 🎮 国际游戏中区CDN
 HOST-SUFFIX, legendofzelda.com.cn, 🎮 国际游戏中区CDN
@@ -39,4 +40,4 @@ HOST-SUFFIX, mariokart.com.cn, 🎮 国际游戏中区CDN
 HOST-SUFFIX, supermariobros.com.cn, 🎮 国际游戏中区CDN
 HOST-SUFFIX, leagueoflegends.cn, 🎮 国际游戏中区CDN
 HOST-SUFFIX, lpl.com.cn, 🎮 国际游戏中区CDN
-HOST, uplaypc-s-ubisoft.cdn.ubi.com, 🎮 国际游戏中区CDN
+HOST-SUFFIX, xboxlive.cn, 🎮 国际游戏中区CDN

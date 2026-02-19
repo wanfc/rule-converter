@@ -65,6 +65,10 @@ HOST, vscode.download.prss.microsoft.com, Ⓜ️ 微软中国
 HOST, vz.download.prss.microsoft.com, Ⓜ️ 微软中国
 HOST, wscont1.apps.microsoft.com, Ⓜ️ 微软中国
 HOST, wscont2.apps.microsoft.com, Ⓜ️ 微软中国
+HOST-SUFFIX, microsoftreactor.cn, Ⓜ️ 微软中国
+HOST-SUFFIX, microsoftreactor.com.cn, Ⓜ️ 微软中国
+HOST-SUFFIX, reactorms.com.cn, Ⓜ️ 微软中国
+HOST, www.microsoft.com, Ⓜ️ 微软中国
 HOST-SUFFIX, microsoftnews.cn, Ⓜ️ 微软中国
 HOST-SUFFIX, msn.cn, Ⓜ️ 微软中国
 HOST-SUFFIX, browser.events.data.msn.cn, Ⓜ️ 微软中国
@@ -163,7 +167,3 @@ HOST-SUFFIX, r.bing.com, Ⓜ️ 微软中国
 HOST-SUFFIX, th.bing.com, Ⓜ️ 微软中国
 HOST, bj1.api.bing.com, Ⓜ️ 微软中国
 HOST, emoi-cncdn.bing.com, Ⓜ️ 微软中国
-HOST-SUFFIX, microsoftreactor.cn, Ⓜ️ 微软中国
-HOST-SUFFIX, microsoftreactor.com.cn, Ⓜ️ 微软中国
-HOST-SUFFIX, reactorms.com.cn, Ⓜ️ 微软中国
-HOST, www.microsoft.com, Ⓜ️ 微软中国

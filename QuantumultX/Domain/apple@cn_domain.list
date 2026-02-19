@@ -251,10 +251,6 @@ HOST, weatherkit.apple.com, 🍏 Apple中国
 HOST, www.apple.com, 🍏 Apple中国
 HOST, www.apple.com.edgekey.net.globalredir.akadns.net, 🍏 Apple中国
 HOST, xp.apple.com, 🍏 Apple中国
-HOST-SUFFIX, researchkit.cn, 🍏 Apple中国
-HOST-SUFFIX, researchkit.com.cn, 🍏 Apple中国
-HOST-SUFFIX, swiftui.cn, 🍏 Apple中国
-HOST-SUFFIX, swiftui.com.cn, 🍏 Apple中国
 HOST, certs-lb.apple.com.akadns.net, 🍏 Apple中国
 HOST, certs.apple.com, 🍏 Apple中国
 HOST, crl-lb.apple.com.akadns.net, 🍏 Apple中国
@@ -283,3 +279,7 @@ HOST-SUFFIX, itunes-apple.cn, 🍏 Apple中国
 HOST-SUFFIX, itunesapple.cn, 🍏 Apple中国
 HOST-SUFFIX, itunesradio.cn, 🍏 Apple中国
 HOST-SUFFIX, itunesradio.com.cn, 🍏 Apple中国
+HOST-SUFFIX, researchkit.cn, 🍏 Apple中国
+HOST-SUFFIX, researchkit.com.cn, 🍏 Apple中国
+HOST-SUFFIX, swiftui.cn, 🍏 Apple中国
+HOST-SUFFIX, swiftui.com.cn, 🍏 Apple中国

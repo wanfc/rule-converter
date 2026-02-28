@@ -496,3 +496,8 @@
   type: "ip"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/cn.list"
+- name: "China_ASN"
+  policy: "🔰 中国ASN"
+  type: "ip"
+  strict: True
+  url: "https://raw.githubusercontent.com/missuo/ASN-China/refs/heads/main/ASN.China.list"

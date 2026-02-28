@@ -39,6 +39,7 @@ HOST-SUFFIX, xn--ohq11k7pl25iyo8a.cn, 🍏 Apple中国
 HOST, amp-api-edge-lb-cn.itunes-apple.com.akadns.net, 🍏 Apple中国
 HOST, amp-api-edge-lb.itunes-apple.com.akadns.net, 🍏 Apple中国
 HOST, amp-api-edge.apps.apple.com, 🍏 Apple中国
+HOST, amp-api-edge.music.apple.com, 🍏 Apple中国
 HOST, amp-api-search-edge.apps.apple.com, 🍏 Apple中国
 HOST, amp-api.apps.apple.com, 🍏 Apple中国
 HOST, amp-api.music.apple.com, 🍏 Apple中国
@@ -69,6 +70,8 @@ HOST, js-cdn.music.apple.com, 🍏 Apple中国
 HOST, km.support.apple.com, 🍏 Apple中国
 HOST, maps.apple.com, 🍏 Apple中国
 HOST, misc-assets.itunes.apple.com, 🍏 Apple中国
+HOST, musicstatus.music.apple.com, 🍏 Apple中国
+HOST, mvod.itunes.apple.com, 🍏 Apple中国
 HOST, myapp.itunes.apple.com, 🍏 Apple中国
 HOST, np-edge.itunes.apple.com, 🍏 Apple中国
 HOST, osxapps.itunes.apple.com, 🍏 Apple中国
@@ -81,6 +84,7 @@ HOST, se2.itunes.apple.com, 🍏 Apple中国
 HOST, search.itunes.apple.com, 🍏 Apple中国
 HOST, sf-api-token-service.itunes.apple.com, 🍏 Apple中国
 HOST, sp.itunes.apple.com, 🍏 Apple中国
+HOST, speedysub.music.apple.com, 🍏 Apple中国
 HOST, streamingaudio.itunes.apple.com, 🍏 Apple中国
 HOST, su.itunes.apple.com, 🍏 Apple中国
 HOST, sync.itunes.apple.com, 🍏 Apple中国
@@ -251,6 +255,13 @@ HOST, weatherkit.apple.com, 🍏 Apple中国
 HOST, www.apple.com, 🍏 Apple中国
 HOST, www.apple.com.edgekey.net.globalredir.akadns.net, 🍏 Apple中国
 HOST, xp.apple.com, 🍏 Apple中国
+HOST-SUFFIX, beats1.cn, 🍏 Apple中国
+HOST-SUFFIX, beats1.com.cn, 🍏 Apple中国
+HOST-SUFFIX, beats2.com.cn, 🍏 Apple中国
+HOST-SUFFIX, beats4.cn, 🍏 Apple中国
+HOST-SUFFIX, beatsbydre.com, 🍏 Apple中国
+HOST-SUFFIX, beatsbydre.com.cn, 🍏 Apple中国
+HOST-SUFFIX, beatsep.cn, 🍏 Apple中国
 HOST-SUFFIX, apple-icloud.cn, 🍏 Apple中国
 HOST-SUFFIX, appleicloud.cn, 🍏 Apple中国
 HOST-SUFFIX, icloud-apple.cn, 🍏 Apple中国
@@ -276,10 +287,3 @@ HOST, ocsp2-lb.apple.com.akadns.net, 🍏 Apple中国
 HOST, ocsp2.apple.com, 🍏 Apple中国
 HOST, valid.apple.com, 🍏 Apple中国
 HOST, valid.origin-apple.com.akadns.net, 🍏 Apple中国
-HOST-SUFFIX, beats1.cn, 🍏 Apple中国
-HOST-SUFFIX, beats1.com.cn, 🍏 Apple中国
-HOST-SUFFIX, beats2.com.cn, 🍏 Apple中国
-HOST-SUFFIX, beats4.cn, 🍏 Apple中国
-HOST-SUFFIX, beatsbydre.com, 🍏 Apple中国
-HOST-SUFFIX, beatsbydre.com.cn, 🍏 Apple中国
-HOST-SUFFIX, beatsep.cn, 🍏 Apple中国

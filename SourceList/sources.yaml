@@ -20,22 +20,22 @@
   policy: "🔺 国内DNS"
   type: "domain"
   strict: True
-  url: "https://raw.githubusercontent.com/wanfc/rule/refs/heads/main/customize/cn_dns_domains.list"
+  url: "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/customize/cn_dns_domains.list"
 - name: "cn_dns_ip"
   policy: "🔺 国内DNS"
   type: "ip"
   strict: True
-  url: "https://raw.githubusercontent.com/wanfc/rule/refs/heads/main/customize/cn_dns_ips.list"
+  url: "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/customize/cn_dns_ips.list"
 - name: "global_dns_domain"
   policy: "🔸™️国外DNS"
   type: "domain"
   strict: True
-  url: "https://raw.githubusercontent.com/wanfc/rule/refs/heads/main/customize/global_dns_domains.list"
+  url: "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/customize/global_dns_domains.list"
 - name: "global_dns_ip"
   policy: "🔸™️国外DNS"
   type: "ip"
   strict: True
-  url: "https://raw.githubusercontent.com/wanfc/rule/refs/heads/main/customize/global_dns_ips.list"
+  url: "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/customize/global_dns_ips.list"
   # 示例2：去广告/混合源（通常只写 baidu.com 但隐含意思是杀全家）
 # 建议关闭 strict: False，这样所有纯域名都会被视为“后缀匹配”，防止漏杀子域名
 - name: "block_domain"
@@ -63,12 +63,12 @@
   policy: "☀️ 自定-内"
   type: "domain"
   strict: True
-  url: "https://raw.githubusercontent.com/wanfc/rule/refs/heads/main/customize/Inner.list"
+  url: "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/customize/Inner.list"
 - name: "outer_custom"
   policy: "☄️™️自定-外"
   type: "domain"
   strict: True
-  url: "https://raw.githubusercontent.com/wanfc/rule/refs/heads/main/customize/Outer.list"
+  url: "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/customize/Outer.list"
 - name: "speedtest_domain"
   policy: "🎰 Speedtest"
   type: "domain"
@@ -372,7 +372,7 @@
   strict: True
   url: 
     - "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/microsoft@cn.list"
-    - "https://raw.githubusercontent.com/wanfc/rule/refs/heads/main/customize/microsoft@cn_add"
+    - "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/customize/microsoft@cn_add.list"
 - name: "microsoft_domain"
   policy: "Ⓜ️™️微软"
   type: "domain"

@@ -69,6 +69,11 @@
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/customize/Outer.list"
+- name: "crack"
+  policy: "🚫 破解"
+  type: "domain"
+  strict: True
+  url: "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/customize/ccleaner-activation_domain.list"  
 - name: "speedtest_domain"
   policy: "🎰 Speedtest"
   type: "domain"

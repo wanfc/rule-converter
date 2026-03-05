@@ -370,7 +370,9 @@
   policy: "Ⓜ️ 微软中国"
   type: "domain"
   strict: True
-  url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/microsoft@cn.list"
+  url: 
+    - "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/microsoft@cn.list"
+    - "https://raw.githubusercontent.com/wanfc/rule/refs/heads/main/customize/microsoft@cn_add"
 - name: "microsoft_domain"
   policy: "Ⓜ️™️微软"
   type: "domain"

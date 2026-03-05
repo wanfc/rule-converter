@@ -1,0 +1,101 @@
+# --- Google ---
+DOMAIN,dns.google
+DOMAIN,dns.google.com
+DOMAIN,8888.google
+
+# --- Cloudflare ---
+DOMAIN,cloudflare-dns.com
+DOMAIN,1dot1dot1dot1.cloudflare-dns.com
+DOMAIN,one.one.one.one
+DOMAIN,family.cloudflare-dns.com
+DOMAIN,security.cloudflare-dns.com
+DOMAIN,mozilla.cloudflare-dns.com
+DOMAIN,chrome.cloudflare-dns.com
+DOMAIN,opera.cloudflare-dns.com
+DOMAIN,dns.cloudflare.com
+
+# --- Quad9 ---
+DOMAIN,dns.quad9.net
+DOMAIN,dns9.quad9.net
+DOMAIN,dns10.quad9.net
+DOMAIN,dns11.quad9.net
+
+# --- AdGuard ---
+DOMAIN,dns.adguard.com
+DOMAIN,dns-family.adguard.com
+DOMAIN,dns-unfiltered.adguard.com
+DOMAIN,unfiltered.adguard-dns.com
+
+# --- OpenDNS / Cisco ---
+DOMAIN,doh.opendns.com
+DOMAIN,doh.familyshield.opendns.com
+
+# --- NextDNS ---
+DOMAIN,dns.nextdns.io
+
+# --- DNS.SB ---
+DOMAIN,dns.sb
+DOMAIN,doh.sb
+DOMAIN,doh.dns.sb
+
+# --- Mullvad ---
+DOMAIN,doh.mullvad.net
+
+# --- 台湾 TWNIC ---
+DOMAIN,dns.twnic.tw
+
+# --- 其他小众/隐私 DNS (合并整理) ---
+DOMAIN,doh.li
+DOMAIN,doh.42l.fr
+DOMAIN,doh.tiar.app
+DOMAIN,jp.tiar.app
+DOMAIN,doh.tiarap.org
+DOMAIN,jp.tiarap.org
+DOMAIN,dns.surfshark.com
+DOMAIN,dns.ipv6dns.com
+DOMAIN,dns.hostux.net
+DOMAIN,dns.aa.net.uk
+DOMAIN,dns.cfiec.net
+DOMAIN,dns.dnsoverhttps.net
+DOMAIN,dns.dns-over-https.com
+DOMAIN,dns.containerpi.com
+DOMAIN,dns.flatuslifir.is
+DOMAIN,dns.keweon.center
+DOMAIN,dns.aaflalo.me
+DOMAIN,dns-nyc.aaflalo.me
+DOMAIN,dns-tls.qis.io
+DOMAIN,doh.qis.io
+DOMAIN,adblock.mydns.network
+DOMAIN,applied-privacy.net
+DOMAIN,cdn-doh.ssnm.xyz
+DOMAIN,doh-de.blahdns.com
+DOMAIN,doh-fi.blahdns.com
+DOMAIN,doh-jp.blahdns.com
+DOMAIN,doh.armadillodns.net
+DOMAIN,doh.centraleu.pi-dns.com
+DOMAIN,doh.eastus.pi-dns.com
+DOMAIN,doh.northeu.pi-dns.com
+DOMAIN,doh.westus.pi-dns.com
+DOMAIN,doh.cleanbrowsing.org
+DOMAIN,security-filter-dns.cleanbrowsing.org
+DOMAIN,doh.crypto.sx
+DOMAIN,doh.dnslify.com
+DOMAIN,doh.ffmuc.net
+DOMAIN,doh.libredns.gr
+DOMAIN,doh.onedns.net
+DOMAIN,doh.powerdns.com
+DOMAIN,doh.powerdns.org
+DOMAIN,doh.seby.io
+DOMAIN,doh.securedns.eu
+DOMAIN,doh.xfinity.com
+DOMAIN,dohdot.coxlab.net
+DOMAIN,example.doh.blockerdns.com
+DOMAIN,ibksturm.synology.me
+DOMAIN,ibuki.cgnat.net
+DOMAIN,jcdns.fun
+DOMAIN,odvr.nic.cz
+DOMAIN,ordns.he.net
+DOMAIN,rdns.faelix.net
+DOMAIN,family.canadianshield.cira.ca
+DOMAIN,private.canadianshield.cira.ca
+DOMAIN,protected.canadianshield.cira.ca

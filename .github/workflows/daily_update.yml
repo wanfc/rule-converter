@@ -1,0 +1,91 @@
+name: Update Rule Sets # 工作流名称
+
+# 触发机制
+on:
+  # 1. 定时触发 (计划任务)
+  schedule:
+    # 2. 每天 UTC 20:37 (北京时间 凌晨 04:37)
+    # 这是一个非常冷门且安全的时间
+    # GitHub 使用 UTC 时间，UTC + 8 = 北京时间
+    - cron: '37 20 * * *'
+  # 2. 手动触发 (方便调试)
+  workflow_dispatch: 
+
+jobs:
+  convert-and-push:
+    runs-on: ubuntu-latest # 使用GitHub 提供的最新的 Ubuntu 虚拟环境
+    
+    # ⚠️ 【关键权限】必须赋予写入权限，否则无法把生成的文件推送到仓库
+    permissions:
+      contents: write  
+
+    steps:
+      # 第一步：拉取仓库代码
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        
+      # 第二步：配置 Python 环境
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10' 
+          
+      # 第三步：安装依赖
+      - name: Install Dependencies
+        # 显式升级 pip，并安装脚本需要的所有库
+        # 如果你脚本里用了 time/json/os 这种内置库不需要安装
+        # 如果脚本后续加了 tqdm (进度条) 或 pytz (时区)其他库，记得在这里补上，比如 pip install pytz
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests pyyaml
+          
+      # 第四步：从 Github 安装最新版 Mihomo 作为 MRS 编译器
+      - name: Install Mihomo Compiler
+        run: |
+          # 自动获取当前最新的 Mihomo 版本号
+          MIHOMO_VERSION=$(curl -sL "https://api.github.com/repos/MetaCubeX/mihomo/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
+          echo "⬇️ 正在下载 Mihomo 编译器版本: ${MIHOMO_VERSION}"
+          wget -qO mihomo.gz "https://github.com/MetaCubeX/mihomo/releases/download/${MIHOMO_VERSION}/mihomo-linux-amd64-${MIHOMO_VERSION}.gz"
+          gunzip mihomo.gz
+          chmod +x mihomo
+          sudo mv mihomo /usr/local/bin/
+          # 验证编译器是否成功挂载到系统环境变量
+          mihomo -v 
+
+      # 第五步：运行 Python 转换脚本 (包含抓取、清洗、去重与 MRS 编译)
+      # 加上 -u 参数 (unbuffered) 让日志实时显示，实时输出，方便在网页查看进度
+      # 作用：让 Python 的 print 输出实时显示在 GitHub Actions 日志里，而不是跑完了一次性吐出来
+      - name: Run Conversion Script
+        run: python -u convert_rules.py
+        
+      # 第六步：目录结构调试打印
+      # 让机器人把它看到的文件列表打印出来，这样你就知道文件到底去哪了
+      - name: Check File List (Debug)
+        run: ls -R
+
+      # 第七步：获取时间戳
+      # 先计算时间，并存入变量
+      # 获取中国时间 (北京时间)
+      # 如果少了这一步，下面就会显示成 []
+      - name: Get Current Date
+        run: |
+          # TZ=Asia/Shanghai 指定时区为上海/北京
+          # CST 代表 China Standard Time
+          CURRENT_TIME=$(TZ=Asia/Shanghai date +'%Y-%m-%d %H:%M:%S CST')
+          # 存入 GitHub 的环境变量里
+          echo "TIME_NOW=$CURRENT_TIME" >> $GITHUB_ENV
+
+      # 第八步：提交并推送更改
+      - name: Commit and Push Changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          # 提交信息带上时间戳，方便查看历史 ⚡️ 这里使用 ${{ env.TIME_NOW }} 来引用上面算好的时间
+          commit_message: "🔄 Auto-update rules & Compile MRS [${{ env.TIME_NOW }}]"
+          branch: main
+          # 改为 "." (代表所有变化)，或者直接删除这一行
+          # 这样：
+          # 1. 如果 error.txt 存在，它会被提交。
+          # 2. 如果 error.txt 不存在，Git 就只提交文件夹，不会报错说找不到文件。
+          file_pattern: .
+          # 禁止在仓库没有变化时报错（比如今天规则源没更新，文件没有任何变化（增量更新检测到MD5一致），不报错，直接跳过）
+          skip_dirty_check: false

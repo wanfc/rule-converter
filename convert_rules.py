@@ -228,7 +228,7 @@ def compile_to_mrs(txt_path, mrs_path, rule_type):
     """
     print(f"  🔄 正在编译 MRS: {os.path.basename(mrs_path)}")
     try:
-        # 核心编译命令: mihomo convert ruleset <domain|ipcidr> text <输入> <输出>
+        # 核心编译命令: mihomo convert-ruleset <domain|ipcidr> text <输入> <输出>
         cmd = ["mihomo", "convert-ruleset", rule_type, "text", txt_path, mrs_path]
         subprocess.run(cmd, check=True, capture_output=True, text=True)
         print(f"  ✅ 编译成功: {os.path.basename(mrs_path)}")
@@ -312,3 +312,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+

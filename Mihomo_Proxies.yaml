@@ -1,64 +1,64 @@
 proxies:
 - name: 电报频道:t.me/GieGie777
   type: ss
-  server: 47.77.184.195
-  port: 80
-  cipher: aes-256-cfb
-  password: aliyun0120
-- name: 新加坡1
-  type: ss
-  server: 18.185.177.25
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 日本2
-  type: ss
-  server: 16.52.37.19
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 韩国3
-  type: ss
-  server: 18.130.255.203
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 台湾4
-  type: ss
-  server: 3.96.186.30
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 美国5
-  type: ss
-  server: 47.77.188.84
-  port: 80
-  cipher: aes-256-cfb
-  password: aliyun0120
-- name: 香港6
-  type: ss
-  server: 63.179.0.244
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 美国7
-  type: ss
-  server: 47.77.191.230
-  port: 80
-  cipher: aes-256-cfb
-  password: aliyun0120
-- name: 日本8
-  type: ss
   server: 18.153.69.158
   port: 443
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 美国9
+- name: 日本1
+  type: ss
+  server: 15.223.5.16
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 美国2
+  type: ss
+  server: 18.119.118.24
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 美国3
+  type: ss
+  server: 47.77.191.92
+  port: 80
+  cipher: aes-256-cfb
+  password: aliyun0120
+- name: 加拿大4
   type: ss
   server: 47.251.173.126
   port: 80
   cipher: aes-256-cfb
   password: aliyun0120
+- name: 韩国5
+  type: ss
+  server: 18.157.164.95
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 日本6
+  type: ss
+  server: 3.75.185.92
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 美国7
+  type: ss
+  server: 47.77.188.84
+  port: 80
+  cipher: aes-256-cfb
+  password: aliyun0120
+- name: 新加坡8
+  type: ss
+  server: 35.182.205.3
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 台湾9
+  type: ss
+  server: 3.96.152.191
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 美国10
   type: ss
   server: 46.17.40.30

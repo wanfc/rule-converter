@@ -61,7 +61,7 @@ jobs:
           sudo mv mihomo /usr/local/bin/
           # 5. 探活测试
           echo "✅ 编译器安装成功！核心版本信息："
-          mihomo --version
+          mihomo --v
 
       # 第五步：运行 Python 转换脚本 (包含抓取、清洗、去重与 MRS 编译)
       # 加上 -u 参数 (unbuffered) 让日志实时显示，实时输出，方便在网页查看进度
@@ -101,3 +101,4 @@ jobs:
           # 禁止在仓库没有变化时报错（比如今天规则源没更新，文件没有任何变化（增量更新检测到MD5一致），不报错，直接跳过）
 
           skip_dirty_check: false
+

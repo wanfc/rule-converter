@@ -43,13 +43,6 @@
   url: 
     - "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/refs/heads/master/discretion/dns.txt"
     - "https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/refs/heads/main/ruleset/HTTPDNS.Block.list"
-- name: "httpdns_ip"
-  policy: "❎ HTTPDNS"
-  type: "ip"
-  strict: True
-  url: 
-    - "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/refs/heads/master/discretion/dns.txt"
-    - "https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/refs/heads/main/ruleset/HTTPDNS.Block.list"
 - name: "pcdn_domain"
   policy: "❎ PCDN"
   type: "domain"

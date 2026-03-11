@@ -41,16 +41,27 @@ jobs:
           
       # 第四步：从 Github 安装最新版 Mihomo 作为 MRS 编译器
       - name: Install Mihomo Compiler
+        env:
+          # 召唤 GitHub 官方内置免死金牌，瞬间将 API 额度提升至每小时 5000 次！
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # 自动获取当前最新的 Mihomo 版本号
-          MIHOMO_VERSION=$(curl -sL "https://api.github.com/repos/MetaCubeX/mihomo/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
-          echo "⬇️ 正在下载 Mihomo 编译器版本: ${MIHOMO_VERSION}"
-          wget -qO mihomo.gz "https://github.com/MetaCubeX/mihomo/releases/download/${MIHOMO_VERSION}/mihomo-linux-amd64-${MIHOMO_VERSION}.gz"
+          # 1. 携带 Token 请求，绝对不会再被限流
+          VERSION=$(curl -sL -H "Authorization: Bearer $GH_TOKEN" https://api.github.com/repos/MetaCubeX/mihomo/releases/latest | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
+          # 2. 物理级容灾防呆机制：如果因为网络玄学依然获取为空，强制焊死一个稳定版本！
+          if [ -z "$VERSION" ]; then
+            echo "⚠️ API 动态获取失败，触发降级容灾，强制使用 v1.19.21"
+            VERSION="v1.19.21"
+          fi
+          echo "⬇️ 正在下载 Mihomo 编译器版本: $VERSION"
+          # 3. 精准下载 (使用 compatible 兼容版，防止 GitHub 虚拟机的旧 CPU 跑不动 AVX2 指令集)
+          wget -qO mihomo.gz "https://github.com/MetaCubeX/mihomo/releases/download/${VERSION}/mihomo-linux-amd64-compatible-${VERSION}.gz"
+          # 4. 解压并赋予最高执行权限
           gunzip mihomo.gz
           chmod +x mihomo
           sudo mv mihomo /usr/local/bin/
-          # 验证编译器是否成功挂载到系统环境变量
-          mihomo -v 
+          # 5. 探活测试
+          echo "✅ 编译器安装成功！核心版本信息："
+          mihomo --version
 
       # 第五步：运行 Python 转换脚本 (包含抓取、清洗、去重与 MRS 编译)
       # 加上 -u 参数 (unbuffered) 让日志实时显示，实时输出，方便在网页查看进度
@@ -88,4 +99,5 @@ jobs:
           # 2. 如果 error.txt 不存在，Git 就只提交文件夹，不会报错说找不到文件。
           file_pattern: .
           # 禁止在仓库没有变化时报错（比如今天规则源没更新，文件没有任何变化（增量更新检测到MD5一致），不报错，直接跳过）
+
           skip_dirty_check: false

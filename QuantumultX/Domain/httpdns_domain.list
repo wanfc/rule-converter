@@ -2,7 +2,6 @@ HOST, api.yuedu.dns.iqiyi.com, ❎ HTTPDNS
 HOST, apidns.kwd.inkuai.com, ❎ HTTPDNS
 HOST, bj.vip.waf.dns.iqiyi.com, ❎ HTTPDNS
 HOST, data.video.dns.iqiyi.com, ❎ HTTPDNS
-HOST, dns.alidns.com, ❎ HTTPDNS
 HOST, dns.iqiyi.com, ❎ HTTPDNS
 HOST, dns.jd.com, ❎ HTTPDNS
 HOST, dns.jd.com.gslb.qianxun.com, ❎ HTTPDNS
@@ -11,7 +10,6 @@ HOST, dns.qq.com, ❎ HTTPDNS
 HOST, dns.weibo.cn, ❎ HTTPDNS
 HOST, dns.weixin.qq.com, ❎ HTTPDNS
 HOST, dns.weixin.qq.com.cn, ❎ HTTPDNS
-HOST, doh.dns.apple.com, ❎ HTTPDNS
 HOST, doh.iqiyi.com, ❎ HTTPDNS
 HOST, doh.ptqy.gitv.tv, ❎ HTTPDNS
 HOST, dotserver.douyucdn.cn, ❎ HTTPDNS

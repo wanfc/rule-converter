@@ -2,7 +2,6 @@ DOMAIN,api.yuedu.dns.iqiyi.com
 DOMAIN,apidns.kwd.inkuai.com
 DOMAIN,bj.vip.waf.dns.iqiyi.com
 DOMAIN,data.video.dns.iqiyi.com
-DOMAIN,dns.alidns.com
 DOMAIN,dns.iqiyi.com
 DOMAIN,dns.jd.com
 DOMAIN,dns.jd.com.gslb.qianxun.com
@@ -11,7 +10,6 @@ DOMAIN,dns.qq.com
 DOMAIN,dns.weibo.cn
 DOMAIN,dns.weixin.qq.com
 DOMAIN,dns.weixin.qq.com.cn
-DOMAIN,doh.dns.apple.com
 DOMAIN,doh.iqiyi.com
 DOMAIN,doh.ptqy.gitv.tv
 DOMAIN,dotserver.douyucdn.cn

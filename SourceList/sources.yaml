@@ -11,6 +11,10 @@
   type: "ip"            # 标记这个文件是 IP 列表
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/private.list"
+  exclude:
+    - "198.18.0.0/15"
+    - "198.18.0.0/16"
+    - "198.19.0.0/16"
 - name: "ntp_domain"
   policy: "🕰️ NTP"
   type: "domain"

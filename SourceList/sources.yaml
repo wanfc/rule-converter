@@ -69,7 +69,12 @@
   type: "domain"
   strict: False
   url: "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/refs/heads/master/discretion/pcdn.txt"
-  # 示例2：去广告/混合源（通常只写 baidu.com 但隐含意思是杀全家）
+- name: "quic_whitelist"
+  policy: "quic_whitelist"
+  type: "domain"
+  strict: True
+  url: "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/customize/quic_whitelist.list"
+# 示例2：去广告/混合源（通常只写 baidu.com 但隐含意思是杀全家）
 # 建议关闭 strict: False，这样所有纯域名都会被视为“后缀匹配”，防止漏杀子域名
 - name: "block_domain"
   policy: "⛔️ 广告|阻断"

@@ -1,0 +1,115 @@
+# 苹果生态 (防 iCloud 彻底断流与照片同步卡死)
+DOMAIN-SUFFIX,apple.com
+DOMAIN-SUFFIX,icloud.com
+DOMAIN-SUFFIX,apple
+DOMAIN-SUFFIX,mzstatic.com
+DOMAIN-SUFFIX,cdn-apple.com      # 苹果最庞大的全球分发 CDN
+DOMAIN-SUFFIX,icloud-content.com # iCloud 数据同步底层核心
+DOMAIN-SUFFIX,me.com
+DOMAIN-SUFFIX,aaplimg.com        # 苹果图片与动效资产节点
+DOMAIN-SUFFIX,apple.com.cn       # 苹果中国区核心
+DOMAIN-SUFFIX,icloud.com.cn      # 云上贵州数据同步绝对命脉
+DOMAIN-SUFFIX,apple-dns.net      # 苹果全球动态 CDN 调度解析
+
+# 谷歌外科手术级放行 (仅限实时通讯，绝不放行视频和 STUN 探针)
+# 绝对不加 +.google.com 和 stun.*.google.com (防止真实IP泄露)
+# 绝对不加 +.googlevideo.com (逼迫 YouTube 老老实实走 TCP 代理通道，保证 4K 不卡)
+# 仅放行以下实时语音/视频会议核心域名，保障跨国开会不断连：
+DOMAIN-SUFFIX,meet.google.com     # Google Meet 会议通道
+DOMAIN-SUFFIX,voice.google.com    # Google Voice 语音电话
+DOMAIN-SUFFIX,telephony.goog      # 谷歌底层语音通信协议
+DOMAIN-SUFFIX,messages.google.com # RCS 实时消息推送
+DOMAIN-SUFFIX,duo.google.com      # 高清视频通话
+
+# 微软与生产力 (防 Teams 会议机械音与更新失败)
+DOMAIN-SUFFIX,microsoft.com
+DOMAIN-SUFFIX,live.com
+DOMAIN-SUFFIX,windows.com
+DOMAIN-SUFFIX,microsoftonline.com
+DOMAIN-SUFFIX,office.com
+DOMAIN-SUFFIX,office365.com
+DOMAIN-SUFFIX,skype.com           # Teams 与 Skype 语音底层极度依赖 QUIC
+DOMAIN-SUFFIX,teams.microsoft.com # Teams 视频会议核心
+DOMAIN-SUFFIX,windowsupdate.com   # Windows 补丁更新分发网络
+
+# 全球主流即时通讯与会议 (防跨国语音/视频通话断流)
+DOMAIN-SUFFIX,whatsapp.net       # WhatsApp 语音通话依赖 UDP 穿透
+DOMAIN-SUFFIX,zoom.us            # Zoom 视频会议核心
+DOMAIN-SUFFIX,webex.com          # 思科 Webex 会议
+DOMAIN-SUFFIX,discord.com        # Discord 语音频道 (极其依赖 UDP)
+DOMAIN-SUFFIX,discord.gg
+DOMAIN-SUFFIX,discordapp.net
+DOMAIN-SUFFIX,telegram.org       # TG 语音通话防降级
+
+# 主机与 PC 游戏网络 (三大主机和 Steam 联机必须全放行 UDP)
+DOMAIN-SUFFIX,xboxlive.com       # Xbox 网络
+DOMAIN-SUFFIX,srv.nintendo.net   # 任天堂联机底层
+DOMAIN-SUFFIX,playstation.net    # PSN 联机网络
+DOMAIN-SUFFIX,steampowered.com   # Steam 远程畅玩与语音
+DOMAIN-SUFFIX,epicgames.com      # Epic 游戏联机对战
+
+# 全量远程工具与 P2P 传输 (极其关键：防 QUIC 阻断导致 P2P 打洞失败，被迫降级 TCP 中转)
+DOMAIN-SUFFIX,oray.com             # 向日葵/花生壳
+DOMAIN-SUFFIX,sunlogin.net
+DOMAIN-SUFFIX,todesk.com           # ToDesk
+DOMAIN-SUFFIX,cybertunnel.run
+DOMAIN-SUFFIX,teamviewer.com       # TeamViewer
+DOMAIN-SUFFIX,anyviewer.com        # AnyViewer
+DOMAIN-SUFFIX,anyviewer.cn
+DOMAIN-SUFFIX,rustdesk.com         # RustDesk
+DOMAIN-SUFFIX,parsec.app           # Parsec (强实时串流，绝不可降级 TCP)
+DOMAIN-SUFFIX,logmein.com
+DOMAIN-SUFFIX,blip.net             # Blip (底层重度依赖 QUIC 协议直传)
+
+# 全球核心测速平台 (Ookla / Netflix / Nperf 等)
+DOMAIN-SUFFIX,ooklaserver.net
+DOMAIN-SUFFIX,speedtest.net
+DOMAIN-SUFFIX,speedtestcustom.com
+DOMAIN-SUFFIX,speedtest.co
+DOMAIN-SUFFIX,speedtest.im
+DOMAIN-SUFFIX,openspeedtest.com
+DOMAIN-SUFFIX,fast.com
+DOMAIN-SUFFIX,nperf.com
+DOMAIN-SUFFIX,pingtest.net
+DOMAIN-SUFFIX,testmy.net
+DOMAIN-SUFFIX,measurementlab.net
+DOMAIN-SUFFIX,cellmaps.com
+DOMAIN-SUFFIX,ookla.com
+DOMAIN-SUFFIX,webtest.net
+
+# 骨干网与各大 CDN 专属测速节点
+DOMAIN,www.speedtest.net.cdn.cloudflare.net
+DOMAIN-SUFFIX,speed.cloudflare.com
+DOMAIN-SUFFIX,cdnst.net
+DOMAIN-SUFFIX,open.cachefly.net
+DOMAIN-SUFFIX,ekahau.com
+DOMAIN-SUFFIX,ekahau.cloud
+
+# 🇨🇳 国内与港台 ISP/地区测速专属
+DOMAIN-SUFFIX,cnspeedtest.cn
+DOMAIN-SUFFIX,speedtest.cn
+DOMAIN-SUFFIX,speedtest.mfcyun.com
+DOMAIN,hk-global-bgp.hkg.speedtest.yecaoyun.com
+DOMAIN-SUFFIX,ookla-speedtest-central.hgconair.hgc.com.hk
+DOMAIN-SUFFIX,speed.dler.io
+DOMAIN-SUFFIX,speed2.hinet.net
+DOMAIN-SUFFIX,speed.hinet.net
+DOMAIN-SUFFIX,speed5.ntu.edu.tw
+DOMAIN-SUFFIX,speed.nccu.edu.tw
+DOMAIN-SUFFIX,speedtest.xfinity.com
+
+# 中国教育网 (CERNET) 高校测速节点群
+DOMAIN-SUFFIX,test.ustc.edu.cn
+DOMAIN-SUFFIX,test6.ustc.edu.cn
+DOMAIN-SUFFIX,test.nju.edu.cn
+DOMAIN-SUFFIX,test6.nju.edu.cn
+DOMAIN-SUFFIX,speed.nju.edu.cn
+DOMAIN-SUFFIX,speed.neu6.edu.cn
+DOMAIN-SUFFIX,speed.nuaa.edu.cn
+DOMAIN-SUFFIX,speed.qlu.edu.cn
+DOMAIN-SUFFIX,speed.ujs.edu.cn
+DOMAIN-SUFFIX,speed6.ujs.edu.cn
+DOMAIN-SUFFIX,speedtest.shu.edu.cn
+DOMAIN-SUFFIX,speedtest6.shu.edu.cn
+DOMAIN-SUFFIX,speedtest.xaut.edu.cn
+DOMAIN-SUFFIX,xnfz.seu.edu.cn

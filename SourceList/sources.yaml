@@ -70,7 +70,7 @@
   strict: False
   url: "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/refs/heads/master/discretion/pcdn.txt"
 - name: "quic_whitelist"
-  policy: "🔰 Quic_Whitelist"
+  policy: "🔰 Quic Whitelist"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/customize/quic_whitelist.list"

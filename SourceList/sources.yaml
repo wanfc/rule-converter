@@ -11,10 +11,7 @@
   type: "ip"            # 标记这个文件是 IP 列表
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/private.list"
-  exclude:
-    - "198.18.0.0/15"
-    - "198.18.0.0/16"
-    - "198.19.0.0/16"
+  exclude: "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/SourceList/exclude/private_ip.list"
 - name: "ntp_domain"
   policy: "🕰️ NTP"
   type: "domain"
@@ -48,9 +45,7 @@
     - "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/refs/heads/master/discretion/dns.txt"
     - "https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/refs/heads/main/ruleset/HTTPDNS.Block.list"
   # 待剔除的黑名单列表 (支持 域名/IP/CIDR/ASN)
-  exclude:
-    - "alidns.com"
-    - "apple.com"
+  exclude: "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/SourceList/exclude/httpdns_domain.list"
 - name: "httpdns_ip"
   policy: "❎ HTTPDNS"
   type: "ip"
@@ -58,12 +53,8 @@
   url: 
     - "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/refs/heads/master/discretion/dns.txt"
     - "https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/refs/heads/main/ruleset/HTTPDNS.Block.list"
-  exclude:
-    # - "IP-ASN,55990"   # ASN 排除 (兼容带前缀的写法)
-    - "119.29.29.98/32"
-    - "119.29.29.99/32"
-    - "202.90.108.13/32"
-    - "202.90.110.46/32"
+  exclude: "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/SourceList/exclude/httpdns_ip.list"
+  # - "IP-ASN,55990"   # ASN 排除 (兼容带前缀的写法)
 - name: "pcdn_domain"
   policy: "❎ PCDN"
   type: "domain"

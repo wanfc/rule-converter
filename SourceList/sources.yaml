@@ -412,6 +412,7 @@
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/microsoft.list"
+  exclude: "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/customize/microsoft@cn_add.list"
 # ======================================================== 谷歌
 - name: "google_domain"
   policy: "🧀™️Google"

@@ -528,6 +528,7 @@
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/geolocation-!cn.list"
+  exclude: "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/SourceList/exclude/cdn.list"
 - name: "cn_ip"
   policy: "🏰 中国2️⃣"
   type: "ip"

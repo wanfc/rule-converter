@@ -1,0 +1,28 @@
+  # 1. 📺 索尼 & Android TV (斩断 ACR 截屏与后台大数据)
+  # 重点：samba.tv 是索尼电视最恶心的 ACR 引擎，会实时截取你的屏幕画面分析你看什么！
+  - DOMAIN-SUFFIX,samba.tv,REJECT
+  - DOMAIN-SUFFIX,flingo.tv,REJECT
+  - DOMAIN-SUFFIX,bda.ndmdhs.com,REJECT
+  - DOMAIN-SUFFIX,adproxy.ndmdhs.com,REJECT
+  - DOMAIN-SUFFIX,app-measurement.com,REJECT # 谷歌 Firebase 后台静默统计
+
+  # 2. 🌾 小米全家桶 (物理超度 MIUI 与米家疯狂的广告/行为探针)
+  # 注意：屏蔽这些绝对不影响你用小爱同学开关灯，只拦截偷偷上传的日志
+  - DOMAIN-SUFFIX,tracking.miui.com,REJECT
+  - DOMAIN-SUFFIX,stat.xiaomi.com,REJECT
+  - DOMAIN-SUFFIX,data.mistat.xiaomi.com,REJECT
+  - DOMAIN-SUFFIX,ad.xiaomi.com,REJECT
+  - DOMAIN-SUFFIX,logonext.tv.xiaomi.com,REJECT
+
+  # 3. 🪟 Windows 10/11 (微软内核级遥测)
+  # 重点：vortex 和 watson 是微软强制收集你电脑软硬件信息的深层接口
+  - DOMAIN-SUFFIX,vortex.data.microsoft.com,REJECT
+  - DOMAIN-SUFFIX,telemetry.microsoft.com,REJECT
+  - DOMAIN-SUFFIX,watson.telemetry.microsoft.com,REJECT
+  - DOMAIN-SUFFIX,settings-win.data.microsoft.com,REJECT
+
+  # 4. 🍎 苹果生态 (虽然相对老实，但依然有大量无用 Analytics)
+  - DOMAIN-SUFFIX,metrics.icloud.com,REJECT
+  - DOMAIN-SUFFIX,metrics.apple.com,REJECT
+  - DOMAIN-SUFFIX,supportmetrics.apple.com,REJECT
+  - DOMAIN-SUFFIX,weather-analytics.apple.com,REJECT

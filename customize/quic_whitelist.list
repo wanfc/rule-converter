@@ -10,6 +10,10 @@ DOMAIN-SUFFIX,aaplimg.com        # 苹果图片与动效资产节点
 DOMAIN-SUFFIX,apple.com.cn       # 苹果中国区核心
 DOMAIN-SUFFIX,icloud.com.cn      # 云上贵州数据同步绝对命脉
 DOMAIN-SUFFIX,apple-dns.net      # 苹果全球动态 CDN 调度解析
+IP-CIDR,17.0.0.0/8
+IP-CIDR6,2403:300::/32
+IP-CIDR6,2620:149::/32
+IP-CIDR6,2a01:b740::/32
 
 # 谷歌外科手术级放行 (仅限实时通讯，绝不放行视频和 STUN 探针)
 # 绝对不加 +.google.com 和 stun.*.google.com (防止真实IP泄露)

@@ -1,42 +1,39 @@
-# 示例1：Geosite 类源（通常包含 +.google.com 和 google.com）
-# 建议开启 strict: True，这样能精准区分“后缀匹配”和“精确匹配”
+# 示例1: Geosite 类源 (通常包含 +.google.com 和 google.com)
+# 建议开启 strict: True, 这样能精准区分“后缀匹配”和“精确匹配”
 - name: "private_domain"
   policy: "私有地址" # 这是给 Quantumult X 用的策略组名称
   type: "domain"        # 标记这个文件是域名列表
-  strict: True          # 开启严格模式  False = 默认后缀匹配 (+.)，True = 默认精确匹配
+  strict: True          # 开启严格模式  False = 默认后缀匹配 (+.), True = 默认精确匹配
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/private.list"
-# 示例3：IP 列表源
+
+# 示例: IP 列表源
 - name: "private_ip"
   policy: "私有地址"
   type: "ip"            # 标记这个文件是 IP 列表
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/private.list"
   exclude: "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/SourceList/exclude/private_ip.list"
+
 - name: "ntp_domain"
   policy: "NTP"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-ntp.list"
-- name: "cn_dns_domain"
-  policy: "国内DNS"
+
+# 示例: 去广告/混合源（通常只写 baidu.com 但隐含意思是杀全家）
+# 建议关闭 strict: False, 这样所有纯域名都会被视为“后缀匹配”, 防止漏杀子域名
+- name: "block_domain"
+  policy: "广告|阻断"
+  type: "domain"
+  strict: False          # 关闭严格模式（默认推荐）
+  url: "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/refs/heads/master/anti-ad-clash.yaml"
+
+- name: "crack"
+  policy: "破解"
   type: "domain"
   strict: True
-  url: "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/customize/cn_dns_domains.list"
-- name: "cn_dns_ip"
-  policy: "国内DNS"
-  type: "ip"
-  strict: True
-  url: "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/customize/cn_dns_ips.list"
-- name: "global_dns_domain"
-  policy: "国外DNS"
-  type: "domain"
-  strict: True
-  url: "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/customize/global_dns_domains.list"
-- name: "global_dns_ip"
-  policy: "国外DNS"
-  type: "ip"
-  strict: True
-  url: "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/customize/global_dns_ips.list"
+  url: "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/customize/ccleaner-activation_domain.list"
+
 - name: "httpdns_domain"
   policy: "HTTPDNS"
   type: "domain"
@@ -46,6 +43,7 @@
     - "https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/refs/heads/main/ruleset/HTTPDNS.Block.list"
   # 待剔除的黑名单列表 (支持 域名/IP/CIDR/ASN)
   exclude: "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/SourceList/exclude/httpdns_domain.list"
+
 - name: "httpdns_ip"
   policy: "HTTPDNS"
   type: "ip"
@@ -54,493 +52,578 @@
     - "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/refs/heads/master/discretion/dns.txt"
     - "https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/refs/heads/main/ruleset/HTTPDNS.Block.list"
   exclude: "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/SourceList/exclude/httpdns_ip.list"
-  # - "IP-ASN,55990"   # ASN 排除 (兼容带前缀的写法)
+  # - "IP-ASN,55990" # ASN 排除 (兼容带前缀的写法)
+
 - name: "pcdn_domain"
   policy: "PCDN"
   type: "domain"
   strict: False
   url: "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/refs/heads/master/discretion/pcdn.txt"
+
+- name: "cn_dns_domain"
+  policy: "国内DNS"
+  type: "domain"
+  strict: True
+  url: "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/customize/cn_dns_domains.list"
+
+- name: "cn_dns_ip"
+  policy: "国内DNS"
+  type: "ip"
+  strict: True
+  url: "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/customize/cn_dns_ips.list"
+
+- name: "global_dns_domain"
+  policy: "国外DNS"
+  type: "domain"
+  strict: True
+  url: "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/customize/global_dns_domains.list"
+
+- name: "global_dns_ip"
+  policy: "国外DNS"
+  type: "ip"
+  strict: True
+  url: "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/customize/global_dns_ips.list"
+
+- name: "inner_custom"
+  policy: "自定-内"
+  type: "domain"
+  strict: True
+  url: "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/customize/Inner.list"
+
+- name: "outer_custom"
+  policy: "自定-外"
+  type: "domain"
+  strict: True
+  url: "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/customize/Outer.list"
+
+- name: "speedtest_domain"
+  policy: "Speedtest"
+  type: "domain"
+  strict: True
+  url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-speedtest.list"
+
 - name: "quic_whitelist"
   policy: "境外UDP白名单"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/customize/quic_whitelist.list"
+
 - name: "quic_whitelist_ip"
   policy: "境外UDP白名单"
   type: "ip"
   strict: True
   url: "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/customize/quic_whitelist.list"
-# 示例2：去广告/混合源（通常只写 baidu.com 但隐含意思是杀全家）
-# 建议关闭 strict: False，这样所有纯域名都会被视为“后缀匹配”，防止漏杀子域名
-- name: "block_domain"
-  policy: "广告|阻断"
-  type: "domain"
-  strict: False          # 关闭严格模式（默认推荐）
-  url: "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/refs/heads/master/anti-ad-clash.yaml"
-# ======================================================== 下载与P2P
+
 - name: "pt_domain"
-  policy: "📦 PT"
+  policy: "PT"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-pt.list"
 - name: "pt_ip"
-  policy: "📦 PT"
+  policy: "PT"
   type: "ip"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/pt.list"
 - name: "p2p_domain"
-  policy: "🍻 BT/P2P"
+  policy: "BT/P2P"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-public-tracker.list"
-- name: "inner_custom"
-  policy: "☀️ 自定-内"
-  type: "domain"
-  strict: True
-  url: "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/customize/Inner.list"
-- name: "outer_custom"
-  policy: "☄️™️自定-外"
-  type: "domain"
-  strict: True
-  url: "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/customize/Outer.list"
-- name: "crack"
-  policy: "🚫 破解"
-  type: "domain"
-  strict: True
-  url: "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/customize/ccleaner-activation_domain.list"  
-- name: "speedtest_domain"
-  policy: "🎰 Speedtest"
-  type: "domain"
-  strict: True
-  url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-speedtest.list"
+
 - name: "xunlei_domain"
-  policy: "🦌 迅雷"
+  policy: "迅雷"
   type: "domain"
   strict: True
   url: 
     - "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/xunlei.list"
     - "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Xunlei/Xunlei.list"
+
 - name: "gamedownload_domain"
-  policy: "🕹️ 游戏下载"
+  policy: "游戏下载"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-game-platforms-download.list"
+
 - name: "games-cn_domain"
-  policy: "🎮 游戏国内"
+  policy: "游戏国内"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-games-cn.list"
+
 - name: "games@cn_domain"
-  policy: "🎮 国际游戏中区CDN"
+  policy: "国际游戏中区CDN"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-games@cn.list"
-# ======================================================== 国内视频与媒体
+
 - name: "bilibiligat_domain"
-  policy: "🐨™️Bilibili 海外"
+  policy: "Bilibili 海外"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/bilibili-cdn@!cn.list"
+
 - name: "bilibili_domain"
-  policy: "🐨 Bilibili"
+  policy: "Bilibili"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/bilibili.list"
+
 - name: "cctv_domain"
-  policy: "📺 CCTV"
+  policy: "CCTV"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/cctv.list"
+
 - name: "mgtv_domain"
-  policy: "🥭 芒果TV"
+  policy: "芒果TV"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/hunantv.list"
+
 - name: "iqiyi_domain"
-  policy: "🥝 爱奇艺"
+  policy: "爱奇艺"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/iqiyi.list"
+
 - name: "douyu_domain"
-  policy: "🦈 斗鱼"
+  policy: "斗鱼"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/douyu.list"
+
 - name: "bytedance@!cn_domain"
-  policy: "🎵 字节海外"
+  policy: "字节海外"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/bytedance@!cn.list"
+
 - name: "bytedance_domain"
-  policy: "🫟 字节跳动"
+  policy: "字节跳动"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/bytedance.list"
+
 - name: "kuaishou_domain"
-  policy: "📸 快手"
+  policy: "快手"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/kuaishou.list"
-# ======================================================== 腾讯与电商系    
+
 - name: "tencent@!cn_domain"
-  policy: "🐧™️腾讯国际"
+  policy: "腾讯国际"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/tencent@!cn.list"
+
 - name: "tencent_domain"
-  policy: "🐧 腾讯"
+  policy: "腾讯"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/tencent.list"
+
 - name: "alibaba_domain"
-  policy: "🐹 阿里巴巴"
+  policy: "阿里"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/alibaba.list"
+
 - name: "jd_domain"
-  policy: "🐶 京东"
+  policy: "京东"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/jd.list"
+
 - name: "pinduoduo_domain"
-  policy: "🦊 拼多多"
+  policy: "拼多多"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/pinduoduo.list"
+
 - name: "suning_domain"
-  policy: "🦁 苏宁"
+  policy: "苏宁"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/suning.list"
+
 - name: "meituan_domain"
-  policy: "🍟 美团"
+  policy: "美团"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/meituan.list"
-# ======================================================== 其他国内大厂
+
 - name: "baidu_domain"
-  policy: "🐻‍❄️ 百度"
+  policy: "百度"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/baidu.list"
+
 - name: "netease_domain"
-  policy: "🦀 网易"
+  policy: "网易"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/netease.list"
+
 - name: "sina_domain"
-  policy: "👁️ 新浪"
+  policy: "新浪"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/sina.list"
+
 - name: "xiaomi_domain"
-  policy: "🍥 小米"
+  policy: "小米"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/xiaomi.list"
+
 - name: "huawei_domain"
-  policy: "🦚 华为"
+  policy: "华为"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/huawei.list"
+
 - name: "didi_domain"
-  policy: "🚕 滴滴"
+  policy: "滴滴"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/didi.list"
+
 - name: "qihoo360_domain"
-  policy: "🐯 奇虎360"
+  policy: "奇虎360"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/qihoo360.list"
+
 - name: "kingsoft_domain"
-  policy: "🏖️ 金山软件"
+  policy: "金山软件"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/kingsoft.list"
-# ======================================================== 运营商
+
 - name: "chinamobile_domain"
-  policy: "📡 运营商"
+  policy: "运营商"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/chinamobile.list"
+
 - name: "chinatelecom_domain"
-  policy: "📡 运营商"
+  policy: "运营商"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/chinatelecom.list"
+
 - name: "chinaunicom_domain"
-  policy: "📡 运营商"
+  policy: "运营商"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/chinaunicom.list"
+
 - name: "chinabroadnet_domain"
-  policy: "📡 运营商"
+  policy: "运营商"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/chinabroadnet.list"
-# ======================================================== 银行
+
 - name: "icbc_domain"
-  policy: "🏦 银行"
+  policy: "银行"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/icbc.list"
+
 - name: "boc_domain"
-  policy: "🏦 银行"
+  policy: "银行"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/boc.list"
+
 - name: "ccb_domain"
-  policy: "🏦 银行"
+  policy: "银行"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/ccb.list"
+
 - name: "cmb_domain"
-  policy: "🏦 银行"
+  policy: "银行"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/cmb.list"
+
 - name: "pingan_domain"
-  policy: "🏦 银行"
+  policy: "银行"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/pingan.list"
+
 - name: "citic_domain"
-  policy: "🏦 银行"
+  policy: "银行"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/citic.list"
+
 - name: "bank-cn_domain"
-  policy: "🏦 银行"
+  policy: "银行"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-bank-cn.list"
-# ======================================================== 泛规则分类
+
 - name: "media-cn_domain"
-  policy: "🍞 中文传媒"
+  policy: "中文传媒"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-media-cn.list"
+
 - name: "socialmedia-cn_domain"
-  policy: "🍉 中文社媒"
+  policy: "中文社媒"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-social-media-cn.list"
+
 - name: "entertainment-cn_domain"
-  policy: "🍋 国内娱乐"
+  policy: "国内娱乐"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-entertainment-cn.list"
-# ======================================================== AI 服务
+
 - name: "ai!cn_domain"
-  policy: "🔆™️国外AI"
+  policy: "国外AI"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-ai-!cn.list"
+
 - name: "apple-intelligence_domain"
-  policy: "🍎™️Apple智能"
+  policy: "Apple智能"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/apple-intelligence.list"
+
 - name: "aicn_domain"
-  policy: "🔅 国内AI"
+  policy: "国内AI"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-ai-cn.list"
+
 - name: "games-!cn_domain"
-  policy: "🎮™️游戏国际"
+  policy: "游戏国际"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-games-!cn.list"
-# ======================================================== 开发者服务
+
 - name: "dev-cn_domain"
-  policy: "🥥 中区开发者"
+  policy: "中区开发者"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-dev-cn.list"
+
 - name: "dev@cn_domain"
-  policy: "🥥 全球开发者中国CDN"
+  policy: "全球开发者中国CDN"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-dev@cn.list"
+
 - name: "github1s_domain"
-  policy: "🥥™️Github1s"
+  policy: "Github1s"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/github1s.list"
+
 - name: "dev_domain"
-  policy: "🥥™️全球开发者"
+  policy: "全球开发者"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-dev.list"
-# ======================================================== 苹果
+
 - name: "apple-cn_domain"
-  policy: "🍏 Apple中国CDN"
+  policy: "Apple中国CDN"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/apple-cn.list"
+
 - name: "apple@cn_domain"
-  policy: "🍏 Apple中国"
+  policy: "Apple中国"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/apple@cn.list"
+
 - name: "apple_domain"
-  policy: "🍎™️Apple"
+  policy: "Apple"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/apple.list"
+
 - name: "apple_ip"
-  policy: "🍎™️Apple"
+  policy: "Apple"
   type: "ip"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo-lite/geoip/apple.list"
-# ======================================================== 微软
+
 - name: "onedrive_domain"
-  policy: "☁️™️OneDrive"
+  policy: "OneDrive"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/onedrive.list"
+
 - name: "bing_domain"
-  policy: "🍍™️Bing"
+  policy: "Bing"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/bing.list"
+
 - name: "microsoft@cn_domain"
-  policy: "Ⓜ️ 微软中国"
+  policy: "微软中国"
   type: "domain"
   strict: True
   url: 
     - "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/microsoft@cn.list"
     - "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/customize/microsoft@cn_add.list"
+
 - name: "microsoft_domain"
-  policy: "Ⓜ️™️微软"
+  policy: "微软"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/microsoft.list"
   exclude: "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/customize/microsoft@cn_add.list"
-# ======================================================== 谷歌
+
 - name: "google_domain"
-  policy: "🧀™️Google"
+  policy: "Google"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/google.list"
+
 - name: "google_ip"
-  policy: "🧀™️Google"
+  policy: "Google"
   type: "ip"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/google.list"
-# ======================================================== 国际社交
+
 - name: "telegram_domain"
-  policy: "📮™️Telegram"
+  policy: "Telegram"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/telegram.list"
+
 - name: "telegram_ip"
-  policy: "📮™️Telegram"
+  policy: "Telegram"
   type: "ip"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/telegram.list"
+
 - name: "twitter_ip"
-  policy: "🍉™️外文社媒"
+  policy: "外文社媒"
   type: "ip"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/twitter.list"
+
 - name: "dcard_domain"
-  policy: "🍀™️Dcard"
+  policy: "Dcard"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/dcard.list"
+
 - name: "socialmedia-!cn_domain"
-  policy: "🍉™️外文社媒"
+  policy: "外文社媒"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-social-media-!cn.list"
-# ======================================================== 金融与加密
+
 - name: "bitget_domain"
-  policy: "💶™️加密货币"
+  policy: "加密货币"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/wanfc/rule/refs/heads/main/BitgetWallet.list"
+
 - name: "crypto_domain"
-  policy: "💶™️加密货币"
+  policy: "加密货币"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-cryptocurrency.list"
+
 - name: "paypal@cn_domain"
-  policy: "💳 贝宝"
+  policy: "贝宝"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/paypal@cn.list"
+
 - name: "paypal_domain"
-  policy: "💳™️PayPal"
+  policy: "PayPal"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/paypal.list"
-# ======================================================== 杂项
+
 - name: "password_domain"
-  policy: "🧰™️Password"
+  policy: "Password"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-password-management.list"
+
 - name: "adguard_domain"
-  policy: "💊™️Adguard"
+  policy: "Adguard"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/adguard.list"
+
 - name: "adobe-activation_domain"
-  policy: "🖍️™️Adobe激活"
+  policy: "Adobe激活"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/adobe-activation.list"
+
 - name: "adobe_domain"
-  policy: "🖍️™️Adobe"
+  policy: "Adobe"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/adobe.list"
+
 - name: "nvidia_domain"
-  policy: "💡™️Nvidia"
+  policy: "Nvidia"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/nvidia.list"
-# ======================================================== 兜底防御
+
 - name: "media_domain"
-  policy: "🍞™️外文传媒"
+  policy: "外文传媒"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-media.list"
+
 - name: "entertainment_domain"
-  policy: "🍋™️国外娱乐"
+  policy: "国外娱乐"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-entertainment.list"
+
 - name: "porn_domain"
-  policy: "🔞™️NSFW"
+  policy: "NSFW"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-porn.list"
+
 - name: "geo-cn_domain"
-  policy: "🗼 GEO国内"
+  policy: "GEO国内"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/geolocation-cn.list"
+
 - name: "cn_domain"
-  policy: "🏰 中国1️⃣"
+  policy: "中国"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/cn.list"
+
 - name: "geo-!cn_domain"
-  policy: "🛫™️GEO国外"
+  policy: "GEO国外"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/geolocation-!cn.list"
   exclude: "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/SourceList/exclude/cdn.list"
+
 - name: "cn_ip"
-  policy: "🏰 中国2️⃣"
+  policy: "中国IP"
   type: "ip"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/cn.list"
+
 - name: "china_asn"
-  policy: "🔰 中国ASN"
+  policy: "中国ASN"
   type: "ip"
   strict: True
   url: "https://raw.githubusercontent.com/missuo/ASN-China/refs/heads/main/ASN.China.list"

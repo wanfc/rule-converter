@@ -1,0 +1,15 @@
+HOST, dot.pub, 国内DNS
+HOST, dns.pub, 国内DNS
+HOST, doh.pub, 国内DNS
+HOST, sm2.doh.pub, 国内DNS
+HOST, dns.alidns.com, 国内DNS
+HOST, doh.360.cn, 国内DNS
+HOST, dot.360.cn, 国内DNS
+HOST, rubyfish.cn, 国内DNS
+HOST, dns.rubyfish.cn, 国内DNS
+HOST, doh.onedns.net, 国内DNS
+HOST, dot.onedns.net, 国内DNS
+HOST, doh-pure.onedns.net, 国内DNS
+HOST, dot-pure.onedns.net, 国内DNS
+HOST, doh-home.onedns.net, 国内DNS
+HOST, dot-home.onedns.net, 国内DNS

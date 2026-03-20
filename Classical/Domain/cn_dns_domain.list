@@ -1,0 +1,15 @@
+DOMAIN,dot.pub
+DOMAIN,dns.pub
+DOMAIN,doh.pub
+DOMAIN,sm2.doh.pub
+DOMAIN,dns.alidns.com
+DOMAIN,doh.360.cn
+DOMAIN,dot.360.cn
+DOMAIN,rubyfish.cn
+DOMAIN,dns.rubyfish.cn
+DOMAIN,doh.onedns.net
+DOMAIN,dot.onedns.net
+DOMAIN,doh-pure.onedns.net
+DOMAIN,dot-pure.onedns.net
+DOMAIN,doh-home.onedns.net
+DOMAIN,dot-home.onedns.net

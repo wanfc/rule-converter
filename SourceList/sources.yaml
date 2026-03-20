@@ -1,44 +1,44 @@
 # 示例1：Geosite 类源（通常包含 +.google.com 和 google.com）
 # 建议开启 strict: True，这样能精准区分“后缀匹配”和“精确匹配”
 - name: "private_domain"
-  policy: "🎠 私有地址" # 这是给 Quantumult X 用的策略组名称
+  policy: "私有地址" # 这是给 Quantumult X 用的策略组名称
   type: "domain"        # 标记这个文件是域名列表
   strict: True          # 开启严格模式  False = 默认后缀匹配 (+.)，True = 默认精确匹配
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/private.list"
 # 示例3：IP 列表源
 - name: "private_ip"
-  policy: "🎠 私有地址"
+  policy: "私有地址"
   type: "ip"            # 标记这个文件是 IP 列表
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/private.list"
   exclude: "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/SourceList/exclude/private_ip.list"
 - name: "ntp_domain"
-  policy: "🕰️ NTP"
+  policy: "NTP"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-ntp.list"
 - name: "cn_dns_domain"
-  policy: "🔺 国内DNS"
+  policy: "国内DNS"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/customize/cn_dns_domains.list"
 - name: "cn_dns_ip"
-  policy: "🔺 国内DNS"
+  policy: "国内DNS"
   type: "ip"
   strict: True
   url: "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/customize/cn_dns_ips.list"
 - name: "global_dns_domain"
-  policy: "🔸™️国外DNS"
+  policy: "国外DNS"
   type: "domain"
   strict: True
   url: "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/customize/global_dns_domains.list"
 - name: "global_dns_ip"
-  policy: "🔸™️国外DNS"
+  policy: "国外DNS"
   type: "ip"
   strict: True
   url: "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/customize/global_dns_ips.list"
 - name: "httpdns_domain"
-  policy: "❎ HTTPDNS"
+  policy: "HTTPDNS"
   type: "domain"
   strict: True
   url: 
@@ -47,7 +47,7 @@
   # 待剔除的黑名单列表 (支持 域名/IP/CIDR/ASN)
   exclude: "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/SourceList/exclude/httpdns_domain.list"
 - name: "httpdns_ip"
-  policy: "❎ HTTPDNS"
+  policy: "HTTPDNS"
   type: "ip"
   strict: True
   url: 
@@ -56,19 +56,24 @@
   exclude: "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/SourceList/exclude/httpdns_ip.list"
   # - "IP-ASN,55990"   # ASN 排除 (兼容带前缀的写法)
 - name: "pcdn_domain"
-  policy: "❎ PCDN"
+  policy: "PCDN"
   type: "domain"
   strict: False
   url: "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/refs/heads/master/discretion/pcdn.txt"
 - name: "quic_whitelist"
-  policy: "🔰 境外UDP白名单"
+  policy: "境外UDP白名单"
   type: "domain"
+  strict: True
+  url: "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/customize/quic_whitelist.list"
+- name: "quic_whitelist_ip"
+  policy: "境外UDP白名单"
+  type: "ip"
   strict: True
   url: "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/customize/quic_whitelist.list"
 # 示例2：去广告/混合源（通常只写 baidu.com 但隐含意思是杀全家）
 # 建议关闭 strict: False，这样所有纯域名都会被视为“后缀匹配”，防止漏杀子域名
 - name: "block_domain"
-  policy: "⛔️ 广告|阻断"
+  policy: "广告|阻断"
   type: "domain"
   strict: False          # 关闭严格模式（默认推荐）
   url: "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/refs/heads/master/anti-ad-clash.yaml"

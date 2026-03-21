@@ -1,59 +1,59 @@
 proxies:
 - name: 电报频道:t.me/GieGie777
   type: ss
-  server: 15.237.26.35
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 新加坡1
-  type: ss
-  server: 51.20.60.66
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 韩国2
-  type: ss
-  server: 51.20.184.166
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 日本3
-  type: ss
   server: 13.38.74.77
   port: 443
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 加拿大4
+- name: 美国1
   type: ss
-  server: 54.75.71.40
+  server: 47.251.173.126
+  port: 80
+  cipher: aes-256-cfb
+  password: aliyun0120
+- name: 新加坡2
+  type: ss
+  server: 13.38.30.97
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 美国3
+  type: ss
+  server: 3.250.70.191
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 美国4
+  type: ss
+  server: 34.242.222.174
   port: 443
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 香港5
   type: ss
-  server: 51.20.75.16
+  server: 56.228.12.58
   port: 443
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 美国6
+- name: 日本6
   type: ss
-  server: 47.89.230.221
-  port: 80
-  cipher: aes-256-cfb
-  password: aliyun0120
-- name: 美国7
-  type: ss
-  server: 54.247.195.239
+  server: 13.62.226.245
   port: 443
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 日本8
+- name: 韩国7
   type: ss
-  server: 51.21.246.148
+  server: 51.20.35.75
   port: 443
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 美国9
+- name: 台湾8
+  type: ss
+  server: 51.20.125.191
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 加拿大9
   type: ss
   server: 47.77.188.84
   port: 80
@@ -70,7 +70,7 @@ proxies:
   server: 192.124.176.95
   port: 8388
   cipher: aes-256-gcm
-  password: ueUOFtq7xHKr
+  password: 8ZbFDluU6QJP
 - name: 日本12
   type: ss
   server: 185.141.219.123
@@ -82,7 +82,7 @@ proxies:
   server: 212.192.12.137
   port: 8388
   cipher: aes-256-gcm
-  password: 7UuFgEfTbdSb
+  password: RI0UcGvIkIDo
 - name: 台湾14
   type: ss
   server: 45.140.169.225

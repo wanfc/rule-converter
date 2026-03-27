@@ -97,6 +97,8 @@ HOST, ntp7.aliyun.com, NTP
 HOST, time.amazonaws.cn, NTP
 HOST, time.izatcloud.net, NTP
 HOST, time.xtracloud.net, NTP
+HOST, izattime.qcomgeo2.com, NTP
+HOST, xtratime.qcomgeo2.com, NTP
 HOST, ntp.tencent.com, NTP
 HOST, ntp1.tencent.com, NTP
 HOST, ntp2.tencent.com, NTP

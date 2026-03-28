@@ -1,5 +1,4 @@
 HOST-SUFFIX, apple.com, 境外UDP白名单
-HOST-SUFFIX, icloud.com, 境外UDP白名单
 HOST-SUFFIX, icloud.com.cn, 境外UDP白名单
 HOST-SUFFIX, mzstatic.com, 境外UDP白名单
 HOST-SUFFIX, cdn-apple.com, 境外UDP白名单
@@ -8,13 +7,6 @@ HOST-SUFFIX, apple-cloudkit.com, 境外UDP白名单
 HOST-SUFFIX, aaplimg.com, 境外UDP白名单
 HOST-SUFFIX, apple.com.cn, 境外UDP白名单
 HOST-SUFFIX, apple-dns.net, 境外UDP白名单
-HOST-SUFFIX, push.apple.com, 境外UDP白名单
-HOST-SUFFIX, ls.apple.com, 境外UDP白名单
-HOST-SUFFIX, meet.google.com, 境外UDP白名单
-HOST-SUFFIX, voice.google.com, 境外UDP白名单
-HOST-SUFFIX, telephony.goog, 境外UDP白名单
-HOST-SUFFIX, messages.google.com, 境外UDP白名单
-HOST-SUFFIX, duo.google.com, 境外UDP白名单
 HOST-SUFFIX, microsoft.com, 境外UDP白名单
 HOST-SUFFIX, live.com, 境外UDP白名单
 HOST-SUFFIX, windows.com, 境外UDP白名单

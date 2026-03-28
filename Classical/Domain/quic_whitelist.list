@@ -1,5 +1,4 @@
 DOMAIN-SUFFIX,apple.com
-DOMAIN-SUFFIX,icloud.com
 DOMAIN-SUFFIX,icloud.com.cn
 DOMAIN-SUFFIX,mzstatic.com
 DOMAIN-SUFFIX,cdn-apple.com
@@ -8,13 +7,6 @@ DOMAIN-SUFFIX,apple-cloudkit.com
 DOMAIN-SUFFIX,aaplimg.com
 DOMAIN-SUFFIX,apple.com.cn
 DOMAIN-SUFFIX,apple-dns.net
-DOMAIN-SUFFIX,push.apple.com
-DOMAIN-SUFFIX,ls.apple.com
-DOMAIN-SUFFIX,meet.google.com
-DOMAIN-SUFFIX,voice.google.com
-DOMAIN-SUFFIX,telephony.goog
-DOMAIN-SUFFIX,messages.google.com
-DOMAIN-SUFFIX,duo.google.com
 DOMAIN-SUFFIX,microsoft.com
 DOMAIN-SUFFIX,live.com
 DOMAIN-SUFFIX,windows.com

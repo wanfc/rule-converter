@@ -26,7 +26,7 @@
   policy: "广告|阻断"
   type: "domain"
   strict: False          # 关闭严格模式（默认推荐）
-  url: "https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblocksurge.list"
+  url: "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/refs/heads/master/anti-ad-clash.yaml"
 
 - name: "crack"
   policy: "破解"

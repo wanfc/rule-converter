@@ -7,6 +7,8 @@ HOST-SUFFIX, apple-cloudkit.com, 境外UDP白名单
 HOST-SUFFIX, aaplimg.com, 境外UDP白名单
 HOST-SUFFIX, apple.com.cn, 境外UDP白名单
 HOST-SUFFIX, apple-dns.net, 境外UDP白名单
+HOST-SUFFIX, cable.auth.com, 境外UDP白名单
+HOST-SUFFIX, cable.ua5v.com, 境外UDP白名单
 HOST-SUFFIX, microsoft.com, 境外UDP白名单
 HOST-SUFFIX, live.com, 境外UDP白名单
 HOST-SUFFIX, windows.com, 境外UDP白名单

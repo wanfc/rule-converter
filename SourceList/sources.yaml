@@ -312,7 +312,9 @@
   policy: "运营商"
   type: "domain"
   strict: True
-  url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/chinatelecom.list"
+  url: 
+    - "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/chinatelecom.list"
+    - "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/SourceList/include/chinatelecom_add.list"
 
 - name: "chinaunicom_domain"
   policy: "运营商"

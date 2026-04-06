@@ -304,7 +304,9 @@
   policy: "运营商"
   type: "domain"
   strict: True
-  url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/chinamobile.list"
+  url: 
+    - "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/chinamobile.list"
+    - "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/SourceList/include/chinamobile_add.list"
 
 - name: "chinatelecom_domain"
   policy: "运营商"

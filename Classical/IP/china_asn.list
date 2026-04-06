@@ -14,10 +14,10 @@ IP-ASN,146762,no-resolve
 IP-ASN,139799,no-resolve
 IP-ASN,9808,no-resolve
 IP-ASN,4538,no-resolve
-IP-ASN,56048,no-resolve
 IP-ASN,4812,no-resolve
-IP-ASN,133865,no-resolve
+IP-ASN,56048,no-resolve
 IP-ASN,24400,no-resolve
+IP-ASN,133865,no-resolve
 IP-ASN,142111,no-resolve
 IP-ASN,17621,no-resolve
 IP-ASN,56040,no-resolve
@@ -30,8 +30,8 @@ IP-ASN,146834,no-resolve
 IP-ASN,134578,no-resolve
 IP-ASN,4842,no-resolve
 IP-ASN,63631,no-resolve
-IP-ASN,140633,no-resolve
 IP-ASN,37963,no-resolve
+IP-ASN,140633,no-resolve
 IP-ASN,55990,no-resolve
 IP-ASN,45090,no-resolve
 IP-ASN,23724,no-resolve
@@ -543,7 +543,6 @@ IP-ASN,141025,no-resolve
 IP-ASN,141006,no-resolve
 IP-ASN,140903,no-resolve
 IP-ASN,140886,no-resolve
-IP-ASN,140873,no-resolve
 IP-ASN,140717,no-resolve
 IP-ASN,140716,no-resolve
 IP-ASN,140707,no-resolve

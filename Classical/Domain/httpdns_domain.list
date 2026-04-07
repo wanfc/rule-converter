@@ -11,6 +11,7 @@ DOMAIN,dns.weibo.cn
 DOMAIN,dns.weixin.qq.com
 DOMAIN,dns.weixin.qq.com.cn
 DOMAIN,doh.iqiyi.com
+DOMAIN,doh.jd.com
 DOMAIN,doh.ptqy.gitv.tv
 DOMAIN,dotserver.douyucdn.cn
 DOMAIN,hdns.ksyun.com
@@ -65,8 +66,8 @@ DOMAIN,resolver.mi.xiaomi.com
 DOMAIN,resolver.msg.global.xiaomi.net
 DOMAIN,resolver.msg.xiaomi.net
 DOMAIN,static.dns.qiyipic.iqiyi.com
-DOMAIN,v6-data.video.dns.iqiyi.com
 DOMAIN,union-httpdns.gslb.yy.com
+DOMAIN,v6-data.video.dns.iqiyi.com
 DOMAIN,resolvers-cn.httpdns.aliyuncs.com
 DOMAIN,httpdnsmultiapi.meituan.com
 DOMAIN,httpdnsmultiapivip.meituan.com

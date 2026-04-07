@@ -11,6 +11,7 @@ HOST, dns.weibo.cn, HTTPDNS
 HOST, dns.weixin.qq.com, HTTPDNS
 HOST, dns.weixin.qq.com.cn, HTTPDNS
 HOST, doh.iqiyi.com, HTTPDNS
+HOST, doh.jd.com, HTTPDNS
 HOST, doh.ptqy.gitv.tv, HTTPDNS
 HOST, dotserver.douyucdn.cn, HTTPDNS
 HOST, hdns.ksyun.com, HTTPDNS
@@ -65,8 +66,8 @@ HOST, resolver.mi.xiaomi.com, HTTPDNS
 HOST, resolver.msg.global.xiaomi.net, HTTPDNS
 HOST, resolver.msg.xiaomi.net, HTTPDNS
 HOST, static.dns.qiyipic.iqiyi.com, HTTPDNS
-HOST, v6-data.video.dns.iqiyi.com, HTTPDNS
 HOST, union-httpdns.gslb.yy.com, HTTPDNS
+HOST, v6-data.video.dns.iqiyi.com, HTTPDNS
 HOST, resolvers-cn.httpdns.aliyuncs.com, HTTPDNS
 HOST, httpdnsmultiapi.meituan.com, HTTPDNS
 HOST, httpdnsmultiapivip.meituan.com, HTTPDNS

@@ -9,6 +9,7 @@ HOST, www.routerlogin.com, 私有地址
 HOST, tplogin.cn, 私有地址
 HOST, miwifi.com, 私有地址
 HOST, www.miwifi.com, 私有地址
+HOST, local.adguard.org, 私有地址
 HOST-SUFFIX, internal, 私有地址
 HOST-SUFFIX, localdomain, 私有地址
 HOST-SUFFIX, example, 私有地址
@@ -123,6 +124,7 @@ HOST-SUFFIX, 8.e.f.ip6.arpa, 私有地址
 HOST-SUFFIX, 113.0.203.in-addr.arpa, 私有地址
 HOST-SUFFIX, 100.51.198.in-addr.arpa, 私有地址
 HOST-SUFFIX, 2.0.192.in-addr.arpa, 私有地址
+HOST-SUFFIX, kis.v2.scr.kaspersky-labs.com, 私有地址
 HOST-SUFFIX, 255.255.255.255.in-addr.arpa, 私有地址
 HOST-SUFFIX, 8.b.d.0.1.0.0.2.ip6.arpa, 私有地址
 HOST-SUFFIX, 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa, 私有地址

@@ -480,7 +480,7 @@
   strict: True
   url: 
     - "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/microsoft@cn.list"
-    - "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/customize/microsoft@cn_add.list"
+    - "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/SourceList/include/microsoft@cn_add.list"
 
 - name: "microsoft_domain"
   policy: "微软"

@@ -1,2 +1,0 @@
-下载或处理失败的上游源地址 (战损名单)：
-https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/customize/microsoft@cn_add.list

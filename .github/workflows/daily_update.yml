@@ -22,13 +22,13 @@ jobs:
     steps:
       # 第一步：拉取仓库代码
       - name: Checkout Code
-        uses: actions/checkout@v5
+        uses: actions/checkout@main
         
       # 第二步：配置 Python 环境
       - name: Set up Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@main
         with:
-          python-version: '3.10' 
+          python-version: '3.x' 
           
       # 第三步：安装依赖
       - name: Install Dependencies
@@ -88,7 +88,7 @@ jobs:
 
       # 第八步：提交并推送更改
       - name: Commit and Push Changes
-        uses: stefanzweifel/git-auto-commit-action@v6
+        uses: stefanzweifel/git-auto-commit-action@master
         with:
           # 提交信息带上时间戳，方便查看历史 ⚡️ 这里使用 ${{ env.TIME_NOW }} 来引用上面算好的时间
           commit_message: "🔄 Auto-update rules & Compile MRS [${{ env.TIME_NOW }}]"

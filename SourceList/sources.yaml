@@ -603,7 +603,9 @@
   policy: "NSFW"
   type: "domain"
   strict: True
-  url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-porn.list"
+  url: 
+    - "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-porn.list"
+    - "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/SourceList/include/porn_add.list"
 
 - name: "geo-cn_domain"
   policy: "GEO国内"

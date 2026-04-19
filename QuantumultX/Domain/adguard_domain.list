@@ -1,9 +1,10 @@
-HOST-SUFFIX, adguardaccount.com, Adguard
 HOST-SUFFIX, adguard.app, Adguard
 HOST-SUFFIX, adguard.com, Adguard
 HOST-SUFFIX, adguard.info, Adguard
 HOST-SUFFIX, adguard.io, Adguard
 HOST-SUFFIX, adguard.org, Adguard
+HOST-SUFFIX, adguardaccount.com, Adguard
+HOST-SUFFIX, adguardcdn.com, Adguard
 HOST-SUFFIX, adtidy.net, Adguard
 HOST-SUFFIX, adtidy.org, Adguard
 HOST-SUFFIX, agrd.eu, Adguard
@@ -12,6 +13,6 @@ HOST-SUFFIX, adguard-dns.com, Adguard
 HOST-SUFFIX, adguard-dns.io, Adguard
 HOST-SUFFIX, adguard-mail.com, Adguard
 HOST-SUFFIX, mask.me, Adguard
-HOST-SUFFIX, adguardvpn.com, Adguard
 HOST-SUFFIX, adguard-vpn.com, Adguard
 HOST-SUFFIX, adguard-vpn.online, Adguard
+HOST-SUFFIX, adguardvpn.com, Adguard

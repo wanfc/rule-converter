@@ -499,6 +499,7 @@ HOST, time4.facebook.com, GEO国外
 HOST, time4.google.com, GEO国外
 HOST, time5.facebook.com, GEO国外
 HOST, tmdb-image-prod.b-cdn.net, GEO国外
+HOST, tmdb-web-image-prod.b-cdn.net, GEO国外
 HOST, tv.applemusic.com, GEO国外
 HOST, tvcastlive-hamivideo.cdn.hinet.net, GEO国外
 HOST, ubisoft-orbit-savegames.s3.amazonaws.com, GEO国外

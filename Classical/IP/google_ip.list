@@ -931,7 +931,16 @@ IP-CIDR,136.48.104.0/21,no-resolve
 IP-CIDR,136.48.112.0/20,no-resolve
 IP-CIDR,136.48.128.0/17,no-resolve
 IP-CIDR,136.49.0.0/20,no-resolve
-IP-CIDR,136.49.16.0/22,no-resolve
+IP-CIDR,136.49.16.0/24,no-resolve
+IP-CIDR,136.49.17.0/25,no-resolve
+IP-CIDR,136.49.17.128/27,no-resolve
+IP-CIDR,136.49.17.160/30,no-resolve
+IP-CIDR,136.49.17.164/32,no-resolve
+IP-CIDR,136.49.17.166/31,no-resolve
+IP-CIDR,136.49.17.168/29,no-resolve
+IP-CIDR,136.49.17.176/28,no-resolve
+IP-CIDR,136.49.17.192/26,no-resolve
+IP-CIDR,136.49.18.0/23,no-resolve
 IP-CIDR,136.49.20.0/24,no-resolve
 IP-CIDR,136.49.21.0/26,no-resolve
 IP-CIDR,136.49.21.64/28,no-resolve

@@ -1,4 +1,5 @@
 HOST, firebase-settings.crashlytics.com, 全球开发者中国CDN
+HOST, cdn.ampproject.org, 全球开发者中国CDN
 HOST-SUFFIX, cdn.jetbrains.com, 全球开发者中国CDN
 HOST-SUFFIX, download-cdn.jetbrains.com.cn, 全球开发者中国CDN
 HOST-SUFFIX, microsoftreactor.cn, 全球开发者中国CDN
@@ -8,4 +9,3 @@ HOST-SUFFIX, researchkit.cn, 全球开发者中国CDN
 HOST-SUFFIX, researchkit.com.cn, 全球开发者中国CDN
 HOST-SUFFIX, swiftui.cn, 全球开发者中国CDN
 HOST-SUFFIX, swiftui.com.cn, 全球开发者中国CDN
-HOST, cdn.ampproject.org, 全球开发者中国CDN

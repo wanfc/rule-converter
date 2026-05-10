@@ -31,6 +31,7 @@ HOST, certs.apple.com, Apple中国CDN
 HOST, cl1-cdn.origin-apple.com.akadns.net, Apple中国CDN
 HOST, cl1.apple.com, Apple中国CDN
 HOST, cl2-cn.apple.com, Apple中国CDN
+HOST, cl2.apple.com.edgekey.net.globalredir.akadns.net, Apple中国CDN
 HOST, cl2.apple.com, Apple中国CDN
 HOST, cl3-cdn.origin-apple.com.akadns.net, Apple中国CDN
 HOST, cl3.apple.com, Apple中国CDN
@@ -56,6 +57,7 @@ HOST, experiments.apple.com, Apple中国CDN
 HOST, gs-loc-cn.apple.com, Apple中国CDN
 HOST, gs-loc.apple.com, Apple中国CDN
 HOST, gsp10-ssl-cn.ls.apple.com, Apple中国CDN
+HOST, gsp11-cn.ls.apple.com, Apple中国CDN
 HOST, gsp12-cn.ls.apple.com, Apple中国CDN
 HOST, gsp13-cn.ls.apple.com, Apple中国CDN
 HOST, gsp4-cn.ls.apple.com.edgekey.net.globalredir.akadns.net, Apple中国CDN
@@ -74,8 +76,6 @@ HOST, guzzoni-apple-com.v.aaplimg.com, Apple中国CDN
 HOST, guzzoni.apple.com, Apple中国CDN
 HOST, guzzoni.smoot.apple.com, Apple中国CDN
 HOST, iadsdk.apple.com, Apple中国CDN
-HOST, icloud-cdn.icloud.com.akadns.net, Apple中国CDN
-HOST, icloud.cdn-apple.com, Apple中国CDN
 HOST, images.apple.com.edgekey.net.globalredir.akadns.net, Apple中国CDN
 HOST, init-kt.apple.com, Apple中国CDN
 HOST, init-p01md-lb.push-apple.com.akadns.net, Apple中国CDN
@@ -108,20 +108,16 @@ HOST, mesu-china.apple.com.akadns.net, Apple中国CDN
 HOST, mesu.apple.com, Apple中国CDN
 HOST, ml.cdn-apple.com, Apple中国CDN
 HOST, music.apple.com, Apple中国CDN
-HOST, ocsp-lb.apple.com.akadns.net, Apple中国CDN
 HOST, ocsp.apple.com, Apple中国CDN
-HOST, ocsp2-lb.apple.com.akadns.net, Apple中国CDN
 HOST, ocsp2.apple.com, Apple中国CDN
 HOST, oscdn.apple.com, Apple中国CDN
 HOST, oscdn.origin-apple.com.akadns.net, Apple中国CDN
 HOST, osxapps.itunes.g.aaplimg.com, Apple中国CDN
 HOST, pancake.apple.com, Apple中国CDN
-HOST, pancake.cdn-apple.com.akadns.net, Apple中国CDN
 HOST, pba0.apple.com, Apple中国CDN
 HOST, probe.siri.apple.com, Apple中国CDN
 HOST, prod-support.apple-support.akadns.net, Apple中国CDN
 HOST, publicassets.cdn-apple.com, Apple中国CDN
-HOST, reserve-prime.apple.com, Apple中国CDN
 HOST, s.mzstatic.com, Apple中国CDN
 HOST, seed-sequoia.siri.apple.com, Apple中国CDN
 HOST, seed-swallow.siri.apple.com, Apple中国CDN

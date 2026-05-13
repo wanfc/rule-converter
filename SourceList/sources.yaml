@@ -368,7 +368,9 @@
   policy: "银行"
   type: "domain"
   strict: True
-  url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-bank-cn.list"
+  url: 
+    - "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-bank-cn.list"
+    - "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/SourceList/include/bank-cn_add.list"
 
 - name: "media-cn_domain"
   policy: "中文传媒"

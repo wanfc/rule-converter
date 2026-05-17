@@ -360,6 +360,12 @@ HOST-SUFFIX, xboxplayanywhere.com, 微软
 HOST-SUFFIX, xboxservices.com, 微软
 HOST-SUFFIX, xboxstudios.com, 微软
 HOST-SUFFIX, xbx.lv, 微软
+HOST-SUFFIX, callersbane.com, 微软
+HOST-SUFFIX, minecraft-services.net, 微软
+HOST-SUFFIX, minecraft.net, 微软
+HOST-SUFFIX, minecraftservices.com, 微软
+HOST-SUFFIX, minecraftshop.com, 微软
+HOST-SUFFIX, mojang.com, 微软
 HOST-SUFFIX, asobostudio.com, 微软
 HOST-SUFFIX, flightsimulator.com, 微软
 HOST-SUFFIX, beth.games, 微软
@@ -372,12 +378,6 @@ HOST-SUFFIX, forza.net, 微软
 HOST-SUFFIX, forzamotorsport.net, 微软
 HOST-SUFFIX, forzaracingchampionship.com, 微软
 HOST-SUFFIX, forzarc.com, 微软
-HOST-SUFFIX, callersbane.com, 微软
-HOST-SUFFIX, minecraft-services.net, 微软
-HOST-SUFFIX, minecraft.net, 微软
-HOST-SUFFIX, minecraftservices.com, 微软
-HOST-SUFFIX, minecraftshop.com, 微软
-HOST-SUFFIX, mojang.com, 微软
 HOST-SUFFIX, microsoft.be, 微软
 HOST-SUFFIX, aadrm.com, 微软
 HOST-SUFFIX, azure-devices-int.net, 微软
@@ -486,10 +486,10 @@ HOST-SUFFIX, octocaptcha.com, 微软
 HOST-SUFFIX, opensource.guide, 微软
 HOST-SUFFIX, repo.new, 微软
 HOST-SUFFIX, thegithubshop.com, 微软
+HOST-SUFFIX, githubcopilot.com, 微软
 HOST-SUFFIX, npm.community, 微软
 HOST-SUFFIX, npmjs.com, 微软
 HOST-SUFFIX, npmjs.org, 微软
-HOST-SUFFIX, githubcopilot.com, 微软
 HOST-SUFFIX, adaptivecards.io, 微软
 HOST-SUFFIX, api-extractor.com, 微软
 HOST-SUFFIX, apisof.net, 微软

@@ -1,4 +1,4 @@
-HOST-SUFFIX, tencentelasticsearch.com, 腾讯
+HOST-SUFFIX, tencentid.com, 腾讯
 HOST-SUFFIX, qcloudmarket.com, 腾讯
 HOST-SUFFIX, acimg.cn, 腾讯
 HOST-SUFFIX, apcdns.net, 腾讯
@@ -32,6 +32,7 @@ HOST-SUFFIX, tfogc.com, 腾讯
 HOST-SUFFIX, wechat.com, 腾讯
 HOST-SUFFIX, wechatpay.cn, 腾讯
 HOST-SUFFIX, weiyun.com, 腾讯
+HOST-SUFFIX, wxaurl.cn, 腾讯
 HOST-SUFFIX, wxcloudrun.com, 腾讯
 HOST-SUFFIX, wxgateway.com, 腾讯
 HOST-SUFFIX, wxlivecdn.com, 腾讯
@@ -155,7 +156,7 @@ HOST-SUFFIX, qclouder.com, 腾讯
 HOST-SUFFIX, qcloudgme.com, 腾讯
 HOST-SUFFIX, qcloudimg.com, 腾讯
 HOST-SUFFIX, qcloudipv6.com, 腾讯
-HOST-SUFFIX, tencentid.com, 腾讯
+HOST-SUFFIX, tencentelasticsearch.com, 腾讯
 HOST-SUFFIX, qcloudns.com, 腾讯
 HOST-SUFFIX, qcloudsmartiot.com, 腾讯
 HOST-SUFFIX, qcloudtcic.com, 腾讯
@@ -233,10 +234,10 @@ HOST-SUFFIX, tencentdb.com, 腾讯
 HOST-SUFFIX, tencentdevices.com, 腾讯
 HOST-SUFFIX, tencentdigitalassistant.com, 腾讯
 HOST-SUFFIX, tencentdms.com, 腾讯
-HOST-SUFFIX, tencenteiam.com, 腾讯
-HOST-SUFFIX, tdnsv5.com, 腾讯
+HOST-SUFFIX, txbyod.com, 腾讯
 HOST-SUFFIX, xn--r70as2s.xn--fiqs8s, 腾讯
-HOST-SUFFIX, texasholdemcup.cn, 腾讯
+HOST-SUFFIX, supercellsupport.cn, 腾讯
+HOST-SUFFIX, tencentidentity.com, 腾讯
 HOST-SUFFIX, tencentproxy.com, 腾讯
 HOST-SUFFIX, tencentrio.com, 腾讯
 HOST-SUFFIX, tencenttid.com, 腾讯
@@ -260,7 +261,7 @@ HOST-SUFFIX, tourismshow.cn, 腾讯
 HOST-SUFFIX, tourismuser.cn, 腾讯
 HOST-SUFFIX, tsparkling.com, 腾讯
 HOST-SUFFIX, tx-exhibition.com, 腾讯
-HOST-SUFFIX, txbyod.com, 腾讯
+HOST-SUFFIX, tencenteiam.com, 腾讯
 HOST-SUFFIX, txidc.wang, 腾讯
 HOST-SUFFIX, txlivecdn.com, 腾讯
 HOST-SUFFIX, txtyxg.com, 腾讯
@@ -294,7 +295,7 @@ HOST-SUFFIX, tdnsv1.com, 腾讯
 HOST-SUFFIX, tdnsv2.com, 腾讯
 HOST-SUFFIX, tdnsv3.com, 腾讯
 HOST-SUFFIX, tdnsv4.com, 腾讯
-HOST-SUFFIX, qq.xn--fiqs8s, 腾讯
+HOST-SUFFIX, tdnsv5.com, 腾讯
 HOST-SUFFIX, tdnsv6.com, 腾讯
 HOST-SUFFIX, tdnsv7.com, 腾讯
 HOST-SUFFIX, tdnsv8.com, 腾讯
@@ -338,7 +339,6 @@ HOST-SUFFIX, ma.run, 腾讯
 HOST-SUFFIX, m1.run, 腾讯
 HOST-SUFFIX, m6.run, 腾讯
 HOST-SUFFIX, m9.run, 腾讯
-HOST-SUFFIX, supercellsupport.cn, 腾讯
 HOST-SUFFIX, supercellcommunity.cn, 腾讯
 HOST-SUFFIX, scsentry.cn, 腾讯
 HOST-SUFFIX, scid.cn, 腾讯
@@ -346,6 +346,7 @@ HOST-SUFFIX, scescdn.cn, 腾讯
 HOST-SUFFIX, sccreators.cn, 腾讯
 HOST-SUFFIX, sccreator.cn, 腾讯
 HOST-SUFFIX, labycore.cn, 腾讯
+HOST-SUFFIX, qq.xn--fiqs8s, 腾讯
 HOST-SUFFIX, haydaypop.cn, 腾讯
 HOST-SUFFIX, brawlstars.cn, 腾讯
 HOST-SUFFIX, codm.com, 腾讯
@@ -412,7 +413,7 @@ HOST-SUFFIX, skydweller.cn, 腾讯
 HOST-SUFFIX, syxlgame.com, 腾讯
 HOST-SUFFIX, tencent-gcloud.com, 腾讯
 HOST-SUFFIX, tencentstart.com, 腾讯
-HOST-SUFFIX, tencentidentity.com, 腾讯
+HOST-SUFFIX, texasholdemcup.cn, 腾讯
 HOST-SUFFIX, texasholdemcup.com, 腾讯
 HOST-SUFFIX, texasholdemcup.net, 腾讯
 HOST-SUFFIX, timibase.com, 腾讯
@@ -436,17 +437,17 @@ HOST-SUFFIX, oracle-tencent.net.cn, 腾讯
 HOST-SUFFIX, foxmail.com.cn, 腾讯
 HOST-SUFFIX, gtimg.com.cn, 腾讯
 HOST-SUFFIX, qq.cn.com, 腾讯
-HOST-SUFFIX, testjrzk.net.cn, 腾讯
-HOST-SUFFIX, ectencent.com.cn, 腾讯
+HOST-SUFFIX, jrzk.net.cn, 腾讯
+HOST-SUFFIX, tencentcos.com.cn, 腾讯
 HOST-SUFFIX, qq.com.cn, 腾讯
 HOST-SUFFIX, timatrix.com.cn, 腾讯
 HOST-SUFFIX, dnspod.com.cn, 腾讯
+HOST-SUFFIX, ectencent.com.cn, 腾讯
 HOST-SUFFIX, qcloudcos.com.cn, 腾讯
-HOST-SUFFIX, jrzk.net.cn, 腾讯
 HOST-SUFFIX, dnsv1.com.cn, 腾讯
 HOST-SUFFIX, yufuid.com.cn, 腾讯
 HOST-SUFFIX, rtx.com.cn, 腾讯
-HOST-SUFFIX, tencentcos.com.cn, 腾讯
+HOST-SUFFIX, testjrzk.net.cn, 腾讯
 HOST-SUFFIX, tencentcdb.com.cn, 腾讯
 HOST-SUFFIX, werepository.com.cn, 腾讯
 HOST-SUFFIX, wegame.com.cn, 腾讯

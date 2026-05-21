@@ -1,64 +1,64 @@
 proxies:
 - name: 电报频道:t.me/GieGie777
   type: ss
-  server: 3.90.16.212
+  server: 15.157.68.13
   port: 443
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 日本1
+- name: 韩国1
   type: ss
-  server: 47.77.184.195
+  server: 15.223.68.125
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 日本2
+  type: ss
+  server: 3.99.163.142
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 日本3
+  type: ss
+  server: 16.52.154.170
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 台湾4
+  type: ss
+  server: 18.153.90.221
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 美国5
+  type: ss
+  server: 34.224.93.221
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 加拿大6
+  type: ss
+  server: 47.77.188.84
   port: 80
   cipher: aes-256-cfb
   password: aliyun0120
-- name: 美国2
+- name: 新加坡7
   type: ss
-  server: 47.77.191.92
+  server: 3.67.67.95
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 美国8
+  type: ss
+  server: 18.209.66.91
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 美国9
+  type: ss
+  server: 47.77.191.230
   port: 80
   cipher: aes-256-cfb
   password: aliyun0120
-- name: 香港3
-  type: ss
-  server: 35.182.134.208
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 韩国4
-  type: ss
-  server: 35.183.96.211
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 加拿大5
-  type: ss
-  server: 54.90.199.147
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 美国6
-  type: ss
-  server: 13.218.172.80
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 日本7
-  type: ss
-  server: 15.222.60.36
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 新加坡8
-  type: ss
-  server: 18.195.213.130
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 台湾9
-  type: ss
-  server: 35.159.110.250
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
 - name: 美国10
   type: ss
   server: 45.140.168.54

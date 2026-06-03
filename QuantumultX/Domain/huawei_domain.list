@@ -1,5 +1,5 @@
-HOST-SUFFIX, cdnhwcllh11.com, 华为
-HOST-SUFFIX, cdnhwcupf06.com, 华为
+HOST-SUFFIX, cdnhwcjog12.com, 华为
+HOST-SUFFIX, cdnhwcurq03.com, 华为
 HOST-SUFFIX, dbank.com, 华为
 HOST-SUFFIX, dbankcdn.cn, 华为
 HOST-SUFFIX, dbankcdn.com, 华为
@@ -8,6 +8,7 @@ HOST-SUFFIX, dbankcloud.com, 华为
 HOST-SUFFIX, dbankedge.cn, 华为
 HOST-SUFFIX, dbankedge.net, 华为
 HOST-SUFFIX, hicloud.com, 华为
+HOST-SUFFIX, hima.auto, 华为
 HOST-SUFFIX, huawei.cn, 华为
 HOST-SUFFIX, huawei.com, 华为
 HOST-SUFFIX, huaweiacad.com, 华为
@@ -47,7 +48,7 @@ HOST-SUFFIX, hwcdnsre.cn, 华为
 HOST-SUFFIX, b2bgo.com, 华为
 HOST-SUFFIX, eduapaashwc.com, 华为
 HOST-SUFFIX, functiongraph.run, 华为
-HOST-SUFFIX, cdnhwcpsd13.com, 华为
+HOST-SUFFIX, hc-cdn.cn, 华为
 HOST-SUFFIX, hc-cdn.com, 华为
 HOST-SUFFIX, hc-sre.com, 华为
 HOST-SUFFIX, huaweiapaas.cn, 华为
@@ -107,7 +108,7 @@ HOST-SUFFIX, km7g.cn, 华为
 HOST-SUFFIX, km8g.cn, 华为
 HOST-SUFFIX, km9g.cn, 华为
 HOST-SUFFIX, kmcb-cn-east-3.cn, 华为
-HOST-SUFFIX, kmcb-cn-north-4.cn, 华为
+HOST-SUFFIX, cdnhwcoem01.com, 华为
 HOST-SUFFIX, kmop-cn-east-3.cn, 华为
 HOST-SUFFIX, kmop-cn-north-4.cn, 华为
 HOST-SUFFIX, livehwc3.cn, 华为
@@ -134,18 +135,18 @@ HOST-SUFFIX, cdnhwc10.com, 华为
 HOST-SUFFIX, pagescube.com, 华为
 HOST-SUFFIX, powerapp.io, 华为
 HOST-SUFFIX, cdnhwchcg02.com, 华为
-HOST-SUFFIX, cdnhwcurq03.com, 华为
+HOST-SUFFIX, cdnhwcllh11.com, 华为
 HOST-SUFFIX, cdnhwczba04.com, 华为
 HOST-SUFFIX, cdnhwclxw05.com, 华为
-HOST-SUFFIX, cdnhwcjog12.com, 华为
+HOST-SUFFIX, cdnhwcupf06.com, 华为
 HOST-SUFFIX, cdnhwcxcy07.com, 华为
 HOST-SUFFIX, cdnhwcatq08.com, 华为
-HOST-SUFFIX, abhouses.com, 华为
-HOST-SUFFIX, cdnhwcedi10.com, 华为
-HOST-SUFFIX, cdnhwcoem01.com, 华为
 HOST-SUFFIX, cdnhwcztu09.com, 华为
+HOST-SUFFIX, cdnhwcedi10.com, 华为
+HOST-SUFFIX, kmcb-cn-north-4.cn, 华为
 HOST-SUFFIX, agconnect.link, 华为
-HOST-SUFFIX, hc-cdn.cn, 华为
+HOST-SUFFIX, 2gkjr.cn, 华为
+HOST-SUFFIX, cdnhwcpsd13.com, 华为
 HOST-SUFFIX, cdnhwcqwg14.com, 华为
 HOST-SUFFIX, cdnhwcqir15.com, 华为
 HOST-SUFFIX, cdnhwcvix16.com, 华为
@@ -242,7 +243,7 @@ HOST-SUFFIX, fpxyo.cn, 华为
 HOST-SUFFIX, tm2a8.cn, 华为
 HOST-SUFFIX, r8zc9.cn, 华为
 HOST-SUFFIX, 6ts7c.cn, 华为
-HOST-SUFFIX, 2gkjr.cn, 华为
+HOST-SUFFIX, abhouses.com, 华为
 HOST-SUFFIX, ns95c.cn, 华为
 HOST-SUFFIX, tm7sg.cn, 华为
 HOST-SUFFIX, le5vb.cn, 华为

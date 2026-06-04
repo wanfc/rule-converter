@@ -539,7 +539,7 @@
   policy: "加密货币"
   type: "domain"
   strict: True
-  url: "https://raw.githubusercontent.com/wanfc/rule/refs/heads/main/BitgetWallet.list"
+  url: "https://raw.githubusercontent.com/wanfc/rule-converter/refs/heads/main/customize/BitgetWallet.list"
 
 - name: "crypto_domain"
   policy: "加密货币"

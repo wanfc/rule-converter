@@ -148,6 +148,7 @@ HOST, cds.apple.com, Apple中国
 HOST, cds.apple.com.akadns.net, Apple中国
 HOST, cdsassets.apple.com, Apple中国
 HOST, cl2-cn.apple.com, Apple中国
+HOST, cl2.apple.com.edgekey.net.globalredir.akadns.net, Apple中国
 HOST, cl4-cn.apple.com, Apple中国
 HOST, clientflow.apple.com, Apple中国
 HOST, clientflow.apple.com.akadns.net, Apple中国
@@ -165,6 +166,7 @@ HOST, experiments.apple.com, Apple中国
 HOST, gs-loc-cn.apple.com, Apple中国
 HOST, gs-loc.apple.com, Apple中国
 HOST, gsp10-ssl-cn.ls.apple.com, Apple中国
+HOST, gsp11-cn.ls.apple.com, Apple中国
 HOST, gsp12-cn.ls.apple.com, Apple中国
 HOST, gsp13-cn.ls.apple.com, Apple中国
 HOST, gsp4-cn.ls.apple.com, Apple中国
@@ -182,8 +184,6 @@ HOST, gspe79-cn-ssl.ls.apple.com, Apple中国
 HOST, guzzoni-apple-com.v.aaplimg.com, Apple中国
 HOST, guzzoni.apple.com, Apple中国
 HOST, guzzoni.smoot.apple.com, Apple中国
-HOST, icloud-cdn.icloud.com.akadns.net, Apple中国
-HOST, icloud.cdn-apple.com, Apple中国
 HOST, images.apple.com.edgekey.net.globalredir.akadns.net, Apple中国
 HOST, init-kt.apple.com, Apple中国
 HOST, init-p01md-lb.push-apple.com.akadns.net, Apple中国
@@ -210,12 +210,10 @@ HOST, oscdn.apple.com, Apple中国
 HOST, oscdn.origin-apple.com.akadns.net, Apple中国
 HOST, osxapps.itunes.g.aaplimg.com, Apple中国
 HOST, pancake.apple.com, Apple中国
-HOST, pancake.cdn-apple.com.akadns.net, Apple中国
 HOST, pba0.apple.com, Apple中国
 HOST, probe.siri.apple.com, Apple中国
 HOST, prod-support.apple-support.akadns.net, Apple中国
 HOST, publicassets.cdn-apple.com, Apple中国
-HOST, reserve-prime.apple.com, Apple中国
 HOST, seed-sequoia.siri.apple.com, Apple中国
 HOST, seed-swallow.siri.apple.com, Apple中国
 HOST, seed.siri.apple.com, Apple中国
@@ -283,9 +281,7 @@ HOST, certs-lb.apple.com.akadns.net, Apple中国
 HOST, certs.apple.com, Apple中国
 HOST, crl-lb.apple.com.akadns.net, Apple中国
 HOST, crl.apple.com, Apple中国
-HOST, ocsp-lb.apple.com.akadns.net, Apple中国
 HOST, ocsp.apple.com, Apple中国
-HOST, ocsp2-lb.apple.com.akadns.net, Apple中国
 HOST, ocsp2.apple.com, Apple中国
 HOST, valid.apple.com, Apple中国
 HOST, valid.origin-apple.com.akadns.net, Apple中国

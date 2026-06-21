@@ -210,6 +210,8 @@ HOST, github-production-repository-image-32fea6.s3.amazonaws.com, GEO国外
 HOST, github-production-upload-manifest-file-7fdce7.s3.amazonaws.com, GEO国外
 HOST, github-production-user-asset-6210df.s3.amazonaws.com, GEO国外
 HOST, gitlab-assets.oss-cn-hongkong.aliyuncs.com, GEO国外
+HOST, gog-cdn-lumen.secure2.footprint.net, GEO国外
+HOST, gog-cdn.akamaized.net, GEO国外
 HOST, google-ohttp-relay-safebrowsing.fastly-edge.com, GEO国外
 HOST, hamivideo.hinet.net, GEO国外
 HOST, hammerandchisel.ssl.zendesk.com, GEO国外

@@ -47,7 +47,6 @@ HOST, collaborateppe.download.prss.microsoft.com, 微软中国
 HOST, ctldl.windowsupdate.com, 微软中国
 HOST, developer.microsoft.com, 微软中国
 HOST, download.microsoft.com, 微软中国
-HOST, download.visualstudio.microsoft.com, 微软中国
 HOST, dreamspark.download.prss.microsoft.com, 微软中国
 HOST, dreamsparkuat.download.prss.microsoft.com, 微软中国
 HOST, f.c2r.ts.cdn.office.net, 微软中国
@@ -188,6 +187,7 @@ HOST, emoi-cncdn.bing.com, 微软中国
 HOST-SUFFIX, microsoftreactor.cn, 微软中国
 HOST-SUFFIX, microsoftreactor.com.cn, 微软中国
 HOST-SUFFIX, reactorms.com.cn, 微软中国
+HOST, download.visualstudio.microsoft.com, 微软中国
 HOST-SUFFIX, wns.windows.com, 微软中国
 HOST-SUFFIX, settings-win.data.microsoft.com, 微软中国
 HOST-SUFFIX, server.events.data.microsoft.com, 微软中国

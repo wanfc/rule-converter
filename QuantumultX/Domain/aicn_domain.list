@@ -12,9 +12,9 @@ HOST-SUFFIX, qwenlm.ai, 国内AI
 HOST-SUFFIX, tongyi.com, 国内AI
 HOST-SUFFIX, antafu.com, 国内AI
 HOST-SUFFIX, antaq.com, 国内AI
-HOST-SUFFIX, aorizon.cn, 国内AI
+HOST-SUFFIX, liblib.art, 国内AI
 HOST-SUFFIX, happyhorse.cn, 国内AI
-HOST-SUFFIX, happyshrimp.cn, 国内AI
+HOST-SUFFIX, safeskill.cn, 国内AI
 HOST-SUFFIX, sleeplesshorizon.cn, 国内AI
 HOST-SUFFIX, dumate.cn, 国内AI
 HOST-SUFFIX, miaoda.cn, 国内AI
@@ -43,7 +43,7 @@ HOST-SUFFIX, baichuan-ai.com, 国内AI
 HOST-SUFFIX, cueme.cn, 国内AI
 HOST-SUFFIX, n.cn, 国内AI
 HOST-SUFFIX, namiso.com, 国内AI
-HOST-SUFFIX, liblib.art, 国内AI
+HOST-SUFFIX, miaoyanai.com, 国内AI
 HOST-SUFFIX, faxingbao.com, 国内AI
 HOST-SUFFIX, kechuangai.com, 国内AI
 HOST-SUFFIX, kling-ai.com, 国内AI
@@ -54,11 +54,12 @@ HOST-SUFFIX, xiezuocat.com, 国内AI
 HOST-SUFFIX, aispeech.com, 国内AI
 HOST-SUFFIX, dui.ai, 国内AI
 HOST-SUFFIX, duiopen.com, 国内AI
-HOST-SUFFIX, miaoyanai.com, 国内AI
+HOST-SUFFIX, aorizon.cn, 国内AI
 HOST-SUFFIX, liblib.cloud, 国内AI
-HOST-SUFFIX, cozetest.cn, 国内AI
+HOST-SUFFIX, happyshrimp.cn, 国内AI
 HOST-SUFFIX, zhiexa.com, 国内AI
 HOST-SUFFIX, linka2a.net, 国内AI
+HOST-SUFFIX, yzsgo.com, 国内AI
 HOST-SUFFIX, butterfly-static.cn, 国内AI
 HOST-SUFFIX, butterflyai.cn, 国内AI
 HOST-SUFFIX, coze-dns-01.com, 国内AI
@@ -73,7 +74,7 @@ HOST-SUFFIX, cozedeploy.com, 国内AI
 HOST-SUFFIX, cozefn.cn, 国内AI
 HOST-SUFFIX, cozeide.cn, 国内AI
 HOST-SUFFIX, cozesdk.com, 国内AI
-HOST-SUFFIX, safeskill.cn, 国内AI
+HOST-SUFFIX, cozetest.cn, 国内AI
 HOST-SUFFIX, cozetest2.cn, 国内AI
 HOST-SUFFIX, cozetest3.cn, 国内AI
 HOST-SUFFIX, dbbuilding.fun, 国内AI

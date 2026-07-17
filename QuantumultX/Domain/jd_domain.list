@@ -1,5 +1,5 @@
 HOST-SUFFIX, jcloudlb.net, 京东
-HOST-SUFFIX, 1huizhan.com, 京东
+HOST-SUFFIX, cloud-wuhan.com, 京东
 HOST-SUFFIX, 300hu.com, 京东
 HOST-SUFFIX, 360buy.cn, 京东
 HOST-SUFFIX, 360buy.com, 京东
@@ -10,14 +10,14 @@ HOST-SUFFIX, 7fresh.com, 京东
 HOST-SUFFIX, baitiao.com, 京东
 HOST-SUFFIX, blackdragon.com, 京东
 HOST-SUFFIX, caiyu.com, 京东
-HOST-SUFFIX, jcloudlb.com, 京东
+HOST-SUFFIX, chicalot.cn, 京东
 HOST-SUFFIX, cloud-beijing.com, 京东
 HOST-SUFFIX, cloud-hebi.com, 京东
 HOST-SUFFIX, cloud-ningbo.com, 京东
 HOST-SUFFIX, cloud-ordos.com, 京东
 HOST-SUFFIX, cloud-shenzhen.com, 京东
 HOST-SUFFIX, cloud-shiyan.com, 京东
-HOST-SUFFIX, cloud-wuhan.com, 京东
+HOST-SUFFIX, jcloudlb.com, 京东
 HOST-SUFFIX, cloud-xian.com, 京东
 HOST-SUFFIX, cloud-xm.com, 京东
 HOST-SUFFIX, cloud-zhaoqing.com, 京东
@@ -33,7 +33,7 @@ HOST-SUFFIX, cloudchaozhou.com, 京东
 HOST-SUFFIX, cloudchengde.com, 京东
 HOST-SUFFIX, cloudchengdu.com, 京东
 HOST-SUFFIX, cloudchuzhou.com, 京东
-HOST-SUFFIX, cloudczs.com, 京东
+HOST-SUFFIX, jcloudimg.net, 京东
 HOST-SUFFIX, clouddalian.com, 京东
 HOST-SUFFIX, clouddatong.com, 京东
 HOST-SUFFIX, clouddongying.com, 京东
@@ -76,7 +76,7 @@ HOST-SUFFIX, cloudtongliang.com, 京东
 HOST-SUFFIX, cloudweinan.com, 京东
 HOST-SUFFIX, cloudxiangtan.com, 京东
 HOST-SUFFIX, cloudxianyou.com, 京东
-HOST-SUFFIX, jcloudimg.net, 京东
+HOST-SUFFIX, cloudxining.com, 京东
 HOST-SUFFIX, cloudyanan.com, 京东
 HOST-SUFFIX, cloudyancheng.com, 京东
 HOST-SUFFIX, cloudyantai.com, 京东
@@ -110,9 +110,9 @@ HOST-SUFFIX, jcloudedge.net, 京东
 HOST-SUFFIX, jcloudgslb.com, 京东
 HOST-SUFFIX, jcloudgslb.net, 京东
 HOST-SUFFIX, jcloudimg.com, 京东
-HOST-SUFFIX, cloudxining.com, 京东
+HOST-SUFFIX, cloudczs.com, 京东
 HOST-SUFFIX, 3.cn, 京东
-HOST-SUFFIX, chicalot.cn, 京东
+HOST-SUFFIX, toplife.com, 京东
 HOST-SUFFIX, jcloudlive.com, 京东
 HOST-SUFFIX, jcloudlv.com, 京东
 HOST-SUFFIX, jcloudoss.com, 京东
@@ -209,7 +209,7 @@ HOST-SUFFIX, prestodb-china.com, 京东
 HOST-SUFFIX, qianxun.com, 京东
 HOST-SUFFIX, qingzhouip.com, 京东
 HOST-SUFFIX, sgsic.com, 京东
-HOST-SUFFIX, toplife.com, 京东
+HOST-SUFFIX, 1huizhan.com, 京东
 HOST-SUFFIX, vg.com, 京东
 HOST-SUFFIX, vipmro.com, 京东
 HOST-SUFFIX, vipmro.net, 京东

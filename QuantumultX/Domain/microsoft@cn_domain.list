@@ -83,7 +83,6 @@ HOST, volic.download.prss.microsoft.com, 微软中国
 HOST, vscode.download.prss.microsoft.com, 微软中国
 HOST, vz.download.prss.microsoft.com, 微软中国
 HOST, windbg.download.prss.microsoft.com, 微软中国
-HOST-SUFFIX, xboxlive.cn, 微软中国
 HOST-SUFFIX, 21vbc.com, 微软中国
 HOST-SUFFIX, 21vbluecloud.com, 微软中国
 HOST-SUFFIX, 21vbluecloud.net, 微软中国
@@ -188,6 +187,7 @@ HOST-SUFFIX, reactorms.com.cn, 微软中国
 HOST, download.visualstudio.microsoft.com, 微软中国
 HOST-SUFFIX, microsoftnews.cn, 微软中国
 HOST-SUFFIX, msn.cn, 微软中国
+HOST-SUFFIX, xboxlive.cn, 微软中国
 HOST-SUFFIX, wns.windows.com, 微软中国
 HOST-SUFFIX, settings-win.data.microsoft.com, 微软中国
 HOST-SUFFIX, server.events.data.microsoft.com, 微软中国

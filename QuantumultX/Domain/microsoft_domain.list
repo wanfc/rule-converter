@@ -25,8 +25,8 @@ HOST, mscrl.microsoft.com, 微软
 HOST, ocsp.microsoft.com, 微软
 HOST, oneocsp.microsoft.com, 微软
 HOST, www.microsoft.com, 微软
-HOST, flightsimulator.azureedge.net, 微软
 HOST, prodforza.blob.core.windows.net, 微软
+HOST, flightsimulator.azureedge.net, 微软
 HOST, azure.microsoft.com, 微软
 HOST, azuremarketplace.microsoft.com, 微软
 HOST, location.microsoft.com, 微软
@@ -305,8 +305,8 @@ HOST-SUFFIX, winhec.net, 微软
 HOST-SUFFIX, yammer.com, 微软
 HOST-SUFFIX, adaptivecards.io, 微软
 HOST-SUFFIX, api-extractor.com, 微软
-HOST-SUFFIX, githubcopilot.com, 微软
 HOST-SUFFIX, npmjs.org, 微软
+HOST-SUFFIX, npmjs.com, 微软
 HOST-SUFFIX, apisof.net, 微软
 HOST-SUFFIX, microsoft.ch, 微软
 HOST-SUFFIX, blazor.net, 微软
@@ -359,8 +359,8 @@ HOST-SUFFIX, vscode.dev, 微软
 HOST-SUFFIX, vscodeedu.app, 微软
 HOST-SUFFIX, vscodeedu.com, 微软
 HOST-SUFFIX, xamarin.com, 微软
-HOST-SUFFIX, npmjs.com, 微软
 HOST-SUFFIX, npm.community, 微软
+HOST-SUFFIX, githubcopilot.com, 微软
 HOST-SUFFIX, thegithubshop.com, 微软
 HOST-SUFFIX, msocsp.com, 微软
 HOST-SUFFIX, microsoftnews.cc, 微软
@@ -417,8 +417,6 @@ HOST-SUFFIX, xboxplayanywhere.com, 微软
 HOST-SUFFIX, xboxservices.com, 微软
 HOST-SUFFIX, xboxstudios.com, 微软
 HOST-SUFFIX, xbx.lv, 微软
-HOST-SUFFIX, asobostudio.com, 微软
-HOST-SUFFIX, flightsimulator.com, 微软
 HOST-SUFFIX, beth.games, 微软
 HOST-SUFFIX, bethesda.net, 微软
 HOST-SUFFIX, bethesdagamestudios.com, 微软
@@ -435,6 +433,8 @@ HOST-SUFFIX, minecraft.net, 微软
 HOST-SUFFIX, minecraftservices.com, 微软
 HOST-SUFFIX, minecraftshop.com, 微软
 HOST-SUFFIX, mojang.com, 微软
+HOST-SUFFIX, asobostudio.com, 微软
+HOST-SUFFIX, flightsimulator.com, 微软
 HOST-SUFFIX, microsoft.be, 微软
 HOST-SUFFIX, aadrm.com, 微软
 HOST-SUFFIX, azure-api.net, 微软

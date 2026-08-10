@@ -205,6 +205,14 @@ HOST, music.apple.com, Apple中国
 HOST, musicstatus.music.apple.com, Apple中国
 HOST, play.music.apple.com, Apple中国
 HOST, speedysub.music.apple.com, Apple中国
+HOST-SUFFIX, apple-icloud.cn, Apple中国
+HOST-SUFFIX, appleicloud.cn, Apple中国
+HOST-SUFFIX, icloud-apple.cn, Apple中国
+HOST-SUFFIX, icloud-content.com.cn, Apple中国
+HOST-SUFFIX, icloud.cn, Apple中国
+HOST-SUFFIX, icloud.com.cn, Apple中国
+HOST-SUFFIX, icloud.net.cn, Apple中国
+HOST-SUFFIX, icloudapple.cn, Apple中国
 HOST, certs-lb.apple.com.akadns.net, Apple中国
 HOST, certs.apple.com, Apple中国
 HOST, crl-lb.apple.com.akadns.net, Apple中国
@@ -286,11 +294,3 @@ HOST-SUFFIX, researchkit.cn, Apple中国
 HOST-SUFFIX, researchkit.com.cn, Apple中国
 HOST-SUFFIX, swiftui.cn, Apple中国
 HOST-SUFFIX, swiftui.com.cn, Apple中国
-HOST-SUFFIX, apple-icloud.cn, Apple中国
-HOST-SUFFIX, appleicloud.cn, Apple中国
-HOST-SUFFIX, icloud-apple.cn, Apple中国
-HOST-SUFFIX, icloud-content.com.cn, Apple中国
-HOST-SUFFIX, icloud.cn, Apple中国
-HOST-SUFFIX, icloud.com.cn, Apple中国
-HOST-SUFFIX, icloud.net.cn, Apple中国
-HOST-SUFFIX, icloudapple.cn, Apple中国

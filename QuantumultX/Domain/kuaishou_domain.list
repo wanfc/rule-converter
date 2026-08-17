@@ -1,3 +1,4 @@
+HOST-SUFFIX, eckwai.com, 快手
 HOST-SUFFIX, ecukwai.com, 快手
 HOST-SUFFIX, gifshow.com, 快手
 HOST-SUFFIX, inkuai.com, 快手
@@ -11,12 +12,24 @@ HOST-SUFFIX, kuaishouapps.com, 快手
 HOST-SUFFIX, kuaishoupay.com, 快手
 HOST-SUFFIX, kuaishouzt.com, 快手
 HOST-SUFFIX, kwaicdn.com, 快手
+HOST-SUFFIX, kwaishop.com, 快手
+HOST-SUFFIX, kwaixiaodian.com, 快手
+HOST-SUFFIX, kwaiying.com, 快手
 HOST-SUFFIX, kwaizt.com, 快手
 HOST-SUFFIX, kwimgs.com, 快手
+HOST-SUFFIX, mojidoc.com, 快手
 HOST-SUFFIX, qingque.cn, 快手
 HOST-SUFFIX, viviv.com, 快手
+HOST-SUFFIX, wskwai.com, 快手
 HOST-SUFFIX, wsukwai.com, 快手
 HOST-SUFFIX, yximgs.com, 快手
+HOST-SUFFIX, ac.fun, 快手
+HOST-SUFFIX, acfun.cn, 快手
+HOST-SUFFIX, acfun.net, 快手
+HOST-SUFFIX, acfunchina.cn, 快手
+HOST-SUFFIX, acfunchina.com, 快手
+HOST-SUFFIX, acfunchina.net, 快手
+HOST-SUFFIX, aixifan.com, 快手
 HOST-SUFFIX, adbkwai.com, 快手
 HOST-SUFFIX, adkwai.com, 快手
 HOST-SUFFIX, adukwai.com, 快手
@@ -24,3 +37,4 @@ HOST-SUFFIX, e.kuaishou.cn, 快手
 HOST-SUFFIX, e.kuaishou.com, 快手
 HOST, log-sdk.gifshow.com, 快手
 HOST, wlog.kuaishou.com, 快手
+HOST, apilog-web.acfun.cn, 快手

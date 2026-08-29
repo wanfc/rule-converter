@@ -1,4 +1,5 @@
-HOST-SUFFIX, xboxlive.cn, 国际游戏中区CDN
+HOST-SUFFIX, yostar.cn, 国际游戏中区CDN
+HOST, gog.qtlglb.com, 国际游戏中区CDN
 HOST-SUFFIX, steamserver.net, 国际游戏中区CDN
 HOST-SUFFIX, steamusercontent.com, 国际游戏中区CDN
 HOST-SUFFIX, csgo.com.cn, 国际游戏中区CDN
@@ -18,9 +19,6 @@ HOST, lv.queniujq.cn, 国际游戏中区CDN
 HOST, xz.pphimalayanrt.com, 国际游戏中区CDN
 HOST-SUFFIX, steamchina.com, 国际游戏中区CDN
 HOST-SUFFIX, gstore.val.manlaxy.com, 国际游戏中区CDN
-HOST, gog.qtlglb.com, 国际游戏中区CDN
-HOST-SUFFIX, yostar.cn, 国际游戏中区CDN
-HOST-SUFFIX, bluearchive-cn.com, 国际游戏中区CDN
 HOST-SUFFIX, legendofzelda.cn, 国际游戏中区CDN
 HOST-SUFFIX, legendofzelda.com.cn, 国际游戏中区CDN
 HOST-SUFFIX, miitomo.com.cn, 国际游戏中区CDN
@@ -35,3 +33,5 @@ HOST-SUFFIX, mariokart.com.cn, 国际游戏中区CDN
 HOST-SUFFIX, supermariobros.com.cn, 国际游戏中区CDN
 HOST-SUFFIX, leagueoflegends.cn, 国际游戏中区CDN
 HOST-SUFFIX, lpl.com.cn, 国际游戏中区CDN
+HOST-SUFFIX, bluearchive-cn.com, 国际游戏中区CDN
+HOST-SUFFIX, xboxlive.cn, 国际游戏中区CDN

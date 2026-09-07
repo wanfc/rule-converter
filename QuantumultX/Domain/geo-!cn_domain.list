@@ -261,6 +261,7 @@ HOST, img-prod-cms-rt-microsoft-com.akamaized.net, GEO国外
 HOST, img-s-msn-com.akamaized.net, GEO国外
 HOST, impala-media-production.s3.amazonaws.com, GEO国外
 HOST, imperial.insendi.com, GEO国外
+HOST, lastfm-img.freetls.fastly.net, GEO国外
 HOST, lastfm.freetls.fastly.net, GEO国外
 HOST, lazer.ppy.sh, GEO国外
 HOST, lgcscc-hamivideo2.cdn.hinet.net, GEO国外

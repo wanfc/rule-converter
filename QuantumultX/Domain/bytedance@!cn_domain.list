@@ -6,13 +6,6 @@ HOST-SUFFIX, ibyteimg.com, 字节海外
 HOST, bytedance.map.fastly.net, 字节海外
 HOST-SUFFIX, capcut.com, 字节海外
 HOST-SUFFIX, capcutcdn-us.com, 字节海外
-HOST-SUFFIX, coze.com, 字节海外
-HOST-SUFFIX, marscode.com, 字节海外
-HOST-SUFFIX, trae.ai, 字节海外
-HOST-SUFFIX, cici.com, 字节海外
-HOST-SUFFIX, ciciai.com, 字节海外
-HOST-SUFFIX, ciciaicdn.com, 字节海外
-HOST-SUFFIX, dola.com, 字节海外
 HOST-SUFFIX, bytedapm.com, 字节海外
 HOST-SUFFIX, muscdn.com, 字节海外
 HOST-SUFFIX, musical.ly, 字节海外
@@ -48,3 +41,10 @@ HOST, roovza-launches.appsflyersdk.com, 字节海外
 HOST, roovza.inapps.appsflyersdk.com, 字节海外
 HOST, roovza.launches.appsflyersdk.com, 字节海外
 HOST, roovza.skadsdk.appsflyersdk.com, 字节海外
+HOST-SUFFIX, coze.com, 字节海外
+HOST-SUFFIX, marscode.com, 字节海外
+HOST-SUFFIX, trae.ai, 字节海外
+HOST-SUFFIX, cici.com, 字节海外
+HOST-SUFFIX, ciciai.com, 字节海外
+HOST-SUFFIX, ciciaicdn.com, 字节海外
+HOST-SUFFIX, dola.com, 字节海外

@@ -496,10 +496,10 @@ HOST-SUFFIX, octocaptcha.com, 微软
 HOST-SUFFIX, opensource.guide, 微软
 HOST-SUFFIX, repo.new, 微软
 HOST-SUFFIX, thegithubshop.com, 微软
-HOST-SUFFIX, githubcopilot.com, 微软
 HOST-SUFFIX, npm.community, 微软
 HOST-SUFFIX, npmjs.com, 微软
 HOST-SUFFIX, npmjs.org, 微软
+HOST-SUFFIX, githubcopilot.com, 微软
 HOST-SUFFIX, adaptivecards.io, 微软
 HOST-SUFFIX, api-extractor.com, 微软
 HOST-SUFFIX, apisof.net, 微软

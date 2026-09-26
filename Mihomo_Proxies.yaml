@@ -1,64 +1,64 @@
 proxies:
 - name: 电报频道:t.me/GieGie777
   type: ss
-  server: 54.89.222.160
+  server: 18.183.241.71
   port: 443
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 美国1
+- name: 加拿大1
   type: ss
-  server: 3.112.72.143
+  server: 3.112.197.237
   port: 443
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 日本2
-  type: ss
-  server: 3.95.209.183
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 加拿大3
-  type: ss
-  server: 47.77.191.92
-  port: 80
-  cipher: aes-256-cfb
-  password: aliyun0120
-- name: 新加坡4
-  type: ss
-  server: 54.234.217.115
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 美国5
-  type: ss
-  server: 47.89.230.221
-  port: 80
-  cipher: aes-256-cfb
-  password: aliyun0120
-- name: 台湾6
+- name: 韩国2
   type: ss
   server: 13.48.104.124
   port: 443
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 香港7
-  type: ss
-  server: 13.48.104.64
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 日本8
+- name: 香港3
   type: ss
   server: 51.20.117.129
   port: 443
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 美国9
+- name: 台湾4
   type: ss
-  server: 18.179.37.17
+  server: 54.89.222.160
   port: 443
   cipher: aes-256-cfb
   password: amazonskr05
+- name: 日本5
+  type: ss
+  server: 13.49.76.55
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 日本6
+  type: ss
+  server: 54.90.169.61
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 新加坡7
+  type: ss
+  server: 3.85.21.125
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 美国8
+  type: ss
+  server: 3.112.209.209
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 美国9
+  type: ss
+  server: 47.77.191.92
+  port: 80
+  cipher: aes-256-cfb
+  password: aliyun0120
 - name: 美国10
   type: ss
   server: 46.29.163.78

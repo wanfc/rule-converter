@@ -96,6 +96,8 @@ HOST, cloudcode-pa.googleapis.com, GEO国外
 HOST, cloudsync-prod.s3.amazonaws.com, GEO国外
 HOST, configuration-lb.ls-apple.com.akadns.net, GEO国外
 HOST, copilot-proxy.githubusercontent.com, GEO国外
+HOST, copilot-telemetry-service.githubusercontent.com, GEO国外
+HOST, copilot-telemetry.githubusercontent.com, GEO国外
 HOST, copilot-workspace.githubnext.com, GEO国外
 HOST, copilotprodattachments.blob.core.windows.net, GEO国外
 HOST, crl.microsoft.com, GEO国外
@@ -264,6 +266,8 @@ HOST, img-prod-cms-rt-microsoft-com.akamaized.net, GEO国外
 HOST, img-s-msn-com.akamaized.net, GEO国外
 HOST, impala-media-production.s3.amazonaws.com, GEO国外
 HOST, imperial.insendi.com, GEO国外
+HOST, incoming-telemetry.thunderbird.net, GEO国外
+HOST, incoming.telemetry.mozilla.org, GEO国外
 HOST, lastfm-img.freetls.fastly.net, GEO国外
 HOST, lastfm.freetls.fastly.net, GEO国外
 HOST, lazer.ppy.sh, GEO国外

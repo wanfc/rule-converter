@@ -1,61 +1,61 @@
 proxies:
 - name: 电报频道:t.me/GieGie777
   type: ss
-  server: 18.191.4.120
-  port: 443
+  server: 47.77.191.92
+  port: 80
   cipher: aes-256-cfb
-  password: amazonskr05
-- name: 美国1
-  type: ss
-  server: 16.60.8.87
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 韩国2
-  type: ss
-  server: 3.147.44.253
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 新加坡3
-  type: ss
-  server: 35.182.212.10
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 日本4
-  type: ss
-  server: 3.96.149.154
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 香港5
+  password: aliyun0120
+- name: 台湾1
   type: ss
   server: 35.183.67.225
   port: 443
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 台湾6
+- name: 美国2
+  type: ss
+  server: 47.89.230.221
+  port: 80
+  cipher: aes-256-cfb
+  password: aliyun0120
+- name: 加拿大3
+  type: ss
+  server: 47.77.188.84
+  port: 80
+  cipher: aes-256-cfb
+  password: aliyun0120
+- name: 美国4
+  type: ss
+  server: 16.61.243.182
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 香港5
   type: ss
   server: 3.145.88.196
   port: 443
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 美国7
+- name: 新加坡6
   type: ss
-  server: 13.135.199.253
+  server: 35.183.68.247
   port: 443
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 加拿大8
+- name: 韩国7
   type: ss
-  server: 13.40.70.175
+  server: 3.145.71.164
   port: 443
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 美国9
+- name: 日本8
   type: ss
-  server: 3.10.19.232
+  server: 3.141.35.47
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 日本9
+  type: ss
+  server: 3.22.27.99
   port: 443
   cipher: aes-256-cfb
   password: amazonskr05
@@ -155,13 +155,7 @@ proxies:
   port: 20111
   cipher: aes-256-gcm
   password: bdb313adf74c2ede
-- name: Mexico 0126
-  type: ss
-  server: 45.76.9.57
-  port: 8393
-  cipher: aes-256-gcm
-  password: 618a13eda4b4d208a4bcdc85fcb8996df812d59dd48419f75ae3f5f5b46a94fb
-- name: Finland 0127
+- name: Finland 0126
   type: ss
   server: 45.76.9.57
   port: 8389

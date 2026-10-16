@@ -1,157 +1,157 @@
 proxies:
 - name: 电报频道:t.me/GieGie777
   type: ss
-  server: 52.15.35.129
+  server: 18.220.174.123
   port: 443
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 美国1
+- name: 台湾1
+  type: ss
+  server: 3.99.171.189
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 日本2
+  type: ss
+  server: 18.117.192.60
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 加拿大3
+  type: ss
+  server: 35.176.18.62
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 美国4
   type: ss
   server: 47.89.230.221
   port: 80
   cipher: aes-256-cfb
   password: aliyun0120
-- name: 日本2
+- name: 香港5
   type: ss
-  server: 3.144.84.214
+  server: 3.96.203.218
   port: 443
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 美国3
+- name: 新加坡6
   type: ss
-  server: 47.77.188.84
-  port: 80
-  cipher: aes-256-cfb
-  password: aliyun0120
-- name: 日本4
-  type: ss
-  server: 16.52.144.101
+  server: 52.14.140.144
   port: 443
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 韩国5
-  type: ss
-  server: 15.175.213.130
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 加拿大6
-  type: ss
-  server: 47.77.191.92
-  port: 80
-  cipher: aes-256-cfb
-  password: aliyun0120
 - name: 美国7
   type: ss
-  server: 35.179.170.253
+  server: 18.175.239.63
   port: 443
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 香港8
+- name: 韩国8
   type: ss
-  server: 35.183.131.38
+  server: 18.119.124.188
   port: 443
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 新加坡9
+- name: 美国9
   type: ss
-  server: 15.175.222.221
+  server: 18.132.97.170
   port: 443
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 美国10
   type: ss
   server: 46.17.43.40
-  port: 50120
+  port: 18443
   cipher: aes-256-gcm
-  password: 6b39ae3234dfd68b
+  password: uOgFZWB/ERaKHKfQ9JierDaMdK4+/ikQ
 - name: 新加坡11
   type: ss
-  server: 194.87.10.151
+  server: 132.243.238.21
   port: 8388
   cipher: aes-256-gcm
-  password: XVTB0knE7EmEuqc4
+  password: y2demTOKv5GdWcxB
 - name: 日本12
   type: ss
-  server: 212.192.221.91
+  server: 89.125.244.131
   port: 8388
   cipher: aes-256-gcm
-  password: 6NzQxVVx8kbw6gEG
+  password: 12MKLT25MCLkfaVx
 - name: 香港13
   type: ss
-  server: 103.136.150.185
+  server: 103.136.150.131
   port: 8388
   cipher: aes-256-gcm
-  password: gRhHs2gFCj5Pl7JC
+  password: r4AcUxiKUv3s09PQ
 - name: 台湾14
   type: ss
   server: 45.129.2.107
-  port: 20111
+  port: 18443
   cipher: aes-256-gcm
-  password: a2c044fe22258a18
+  password: 5XM34ftwNpuPT2Jmq8cjYpYKBj2TAZF1
 - name: 法国15
   type: ss
   server: 89.125.244.67
-  port: 10550
+  port: 18443
   cipher: aes-256-gcm
-  password: 9cfaa78d51ac366f
+  password: e6Jr1K0G+Vkh4v8j6EWrjZZ5pZTAVA3G
 - name: 泰国16
   type: ss
   server: 86.107.50.183
-  port: 50120
+  port: 18443
   cipher: aes-256-gcm
-  password: 78235e7dc55e9ad1
+  password: dmJDtsxs41dBer8X+7idvkvMQHqJuwRb
 - name: 澳大利亚17
   type: ss
   server: 194.87.196.107
-  port: 50120
+  port: 18443
   cipher: aes-256-gcm
-  password: 4938e975724d0ed1
+  password: Lpq5UPVHtQYiuB9jEUNc2WkeIYCUH9DE
 - name: 加拿大18
   type: ss
   server: 176.32.32.108
-  port: 20119
+  port: 18443
   cipher: aes-256-gcm
-  password: d8a115ba7ee0d990
+  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
 - name: 意大利19
   type: ss
   server: 89.125.103.208
-  port: 20111
+  port: 18443
   cipher: aes-256-gcm
-  password: 994ccabf6f0950d6
+  password: PMaWKfOrCdResU4Zi/RFb6gbbrRw5FkP
 - name: 英国20
   type: ss
   server: 46.17.41.166
-  port: 20119
+  port: 18443
   cipher: aes-256-gcm
-  password: 895b4b796a357570
+  password: BCUpLQqELzCOcX9GnNXn8k0/tkH62agk
 - name: 西班牙21
   type: ss
   server: 46.17.41.166
-  port: 20119
+  port: 18443
   cipher: aes-256-gcm
-  password: 895b4b796a357570
+  password: BCUpLQqELzCOcX9GnNXn8k0/tkH62agk
 - name: 香港22
   type: ss
   server: 212.192.12.135
-  port: 20999
+  port: 18443
   cipher: aes-256-gcm
-  password: 72553320ae6bcc8f
+  password: IiMpcTnv3eXVF6uHSHLuv7xNfE+9fYjy
 - name: 俄罗斯23
   type: ss
   server: 45.140.168.141
-  port: 50120
+  port: 18443
   cipher: aes-256-gcm
-  password: bdb313adf74c2ede
+  password: P/Jys9CewibUc+jtyT+EhQnZ8mwGIgT7
 - name: 加拿大24
   type: ss
   server: 86.107.50.183
-  port: 50120
+  port: 18443
   cipher: aes-256-gcm
-  password: 78235e7dc55e9ad1
+  password: dmJDtsxs41dBer8X+7idvkvMQHqJuwRb
 - name: 法国25
   type: ss
   server: 45.140.168.141
-  port: 50120
+  port: 18443
   cipher: aes-256-gcm
-  password: bdb313adf74c2ede
+  password: P/Jys9CewibUc+jtyT+EhQnZ8mwGIgT7

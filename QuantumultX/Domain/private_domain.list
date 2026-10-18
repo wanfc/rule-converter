@@ -6,6 +6,8 @@ HOST, www.asusrouter.com, 私有地址
 HOST, oasisauth.h3c.com, 私有地址
 HOST, routerlogin.com, 私有地址
 HOST, www.routerlogin.com, 私有地址
+HOST, localhost.weixin.qq.com, 私有地址
+HOST, localhost.work.weixin.qq.com, 私有地址
 HOST, tplogin.cn, 私有地址
 HOST, miwifi.com, 私有地址
 HOST, www.miwifi.com, 私有地址

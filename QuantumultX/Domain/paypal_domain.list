@@ -136,7 +136,6 @@ HOST-SUFFIX, paypal.jp, PayPal
 HOST-SUFFIX, paypal.me, PayPal
 HOST-SUFFIX, paypal.so, PayPal
 HOST-SUFFIX, paypal.us, PayPal
-HOST-SUFFIX, paypalbeacon.com, PayPal
 HOST-SUFFIX, paypalbenefits.com, PayPal
 HOST-SUFFIX, paypalbrasil.com, PayPal
 HOST-SUFFIX, paypalcommunity.com, PayPal
@@ -238,6 +237,7 @@ HOST-SUFFIX, beibao.com.cn, PayPal
 HOST-SUFFIX, paypal.com.cn, PayPal
 HOST-SUFFIX, paypal.net.cn, PayPal
 HOST-SUFFIX, paypal.org.cn, PayPal
+HOST-SUFFIX, paypalbeacon.com, PayPal
 HOST-SUFFIX, paypalcommunity.cn, PayPal
 HOST-SUFFIX, paypalhere.cn, PayPal
 HOST-SUFFIX, paypalhere.com.cn, PayPal

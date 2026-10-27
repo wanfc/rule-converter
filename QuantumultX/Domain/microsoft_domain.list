@@ -69,8 +69,8 @@ HOST-SUFFIX, azure, 微软
 HOST-SUFFIX, xbox, 微软
 HOST-SUFFIX, onedriveupdater, 微软
 HOST-SUFFIX, onedrive, 微软
-HOST-SUFFIX, microsoftnews.net, 微软
-HOST-SUFFIX, internetexplorer.com, 微软
+HOST-SUFFIX, microsoftnews.org, 微软
+HOST-SUFFIX, xbox.eu, 微软
 HOST-SUFFIX, microsoft.com, 微软
 HOST-SUFFIX, microsoft.cz, 微软
 HOST-SUFFIX, microsoft.de, 微软
@@ -107,9 +107,6 @@ HOST-SUFFIX, m12.vc, 微软
 HOST-SUFFIX, a-msedge.net, 微软
 HOST-SUFFIX, aka.ms, 微软
 HOST-SUFFIX, ankarazirvesi2018.com, 微软
-HOST-SUFFIX, applicationinsights.io, 微软
-HOST-SUFFIX, applicationinsights.net, 微软
-HOST-SUFFIX, aria.ms, 微软
 HOST-SUFFIX, asp.net, 微软
 HOST-SUFFIX, aspnetcdn.com, 微软
 HOST-SUFFIX, binads.com, 微软
@@ -155,7 +152,7 @@ HOST-SUFFIX, ie9.com, 微软
 HOST-SUFFIX, imaginecup.pl, 微软
 HOST-SUFFIX, ingads.com, 微软
 HOST-SUFFIX, internetexplorer.co, 微软
-HOST-SUFFIX, microsoftnewskids.com, 微软
+HOST-SUFFIX, internetexplorer.com, 微软
 HOST-SUFFIX, intunewiki.com, 微软
 HOST-SUFFIX, iotinactionevents.com, 微软
 HOST-SUFFIX, kidgrid.tv, 微软
@@ -171,7 +168,7 @@ HOST-SUFFIX, managedmeetingrooms.com, 微软
 HOST-SUFFIX, meetfasttrack.com, 微软
 HOST-SUFFIX, meetyourdevices.com, 微软
 HOST-SUFFIX, mepn.com, 微软
-HOST-SUFFIX, microsoftnewsforkids.org, 微软
+HOST-SUFFIX, microsoftedgeinsider.com, 微软
 HOST-SUFFIX, microsoft-falcon.io, 微软
 HOST-SUFFIX, microsoft-int.com, 微软
 HOST-SUFFIX, microsoft-ppe.com, 微软
@@ -265,7 +262,7 @@ HOST-SUFFIX, sharepointonline.com, 微软
 HOST-SUFFIX, signalr.net, 微软
 HOST-SUFFIX, skype.com, 微软
 HOST-SUFFIX, skype.net, 微软
-HOST-SUFFIX, skypeassets.com, 微软
+HOST-SUFFIX, microsoftnewskids.org, 微软
 HOST-SUFFIX, skypeassets.net, 微软
 HOST-SUFFIX, spo-msedge.net, 微软
 HOST-SUFFIX, staffhub.ms, 微软
@@ -275,7 +272,7 @@ HOST-SUFFIX, svc.ms, 微软
 HOST-SUFFIX, sway-cdn.com, 微软
 HOST-SUFFIX, sway.com, 微软
 HOST-SUFFIX, sysinternals.com, 微软
-HOST-SUFFIX, microsoftnewskids.net, 微软
+HOST-SUFFIX, t-msedge.net, 微软
 HOST-SUFFIX, tailwindtraders.com, 微软
 HOST-SUFFIX, techhub.ms, 微软
 HOST-SUFFIX, tfsallin.net, 微软
@@ -307,14 +304,14 @@ HOST-SUFFIX, microsoftnews.cc, 微软
 HOST-SUFFIX, xamarin.com, 微软
 HOST-SUFFIX, vscodeedu.com, 微软
 HOST-SUFFIX, microsoftnews.com, 微软
+HOST-SUFFIX, microsoftnews.net, 微软
 HOST-SUFFIX, microsoft.ch, 微软
-HOST-SUFFIX, microsoftnews.org, 微软
 HOST-SUFFIX, microsoftnewsforkids.com, 微软
 HOST-SUFFIX, microsoftnewsforkids.net, 微软
-HOST-SUFFIX, microsoftedgeinsider.com, 微软
+HOST-SUFFIX, microsoftnewsforkids.org, 微软
+HOST-SUFFIX, xboxservices.com, 微软
 HOST-SUFFIX, microsoft.cl, 微软
-HOST-SUFFIX, t-msedge.net, 微软
-HOST-SUFFIX, microsoftnewskids.org, 微软
+HOST-SUFFIX, skypeassets.com, 微软
 HOST-SUFFIX, msn.com, 微软
 HOST-SUFFIX, msnewskids.com, 微软
 HOST-SUFFIX, msnewskids.net, 微软
@@ -344,7 +341,7 @@ HOST-SUFFIX, renovacionxboxlive.com, 微软
 HOST-SUFFIX, tellmewhygame.com, 微软
 HOST-SUFFIX, xbox.co, 微软
 HOST-SUFFIX, xbox.com, 微软
-HOST-SUFFIX, xbox.eu, 微软
+HOST-SUFFIX, microsoftnewskids.net, 微软
 HOST-SUFFIX, xbox.org, 微软
 HOST-SUFFIX, xbox360.co, 微软
 HOST-SUFFIX, xbox360.com, 微软
@@ -358,7 +355,7 @@ HOST-SUFFIX, xboxone.co, 微软
 HOST-SUFFIX, xboxone.com, 微软
 HOST-SUFFIX, xboxone.eu, 微软
 HOST-SUFFIX, xboxplayanywhere.com, 微软
-HOST-SUFFIX, xboxservices.com, 微软
+HOST-SUFFIX, microsoftnewskids.com, 微软
 HOST-SUFFIX, xboxstudios.com, 微软
 HOST-SUFFIX, xbx.lv, 微软
 HOST-SUFFIX, beth.games, 微软
@@ -544,6 +541,10 @@ HOST-SUFFIX, visualstudio.co.uk, 微软
 HOST-SUFFIX, spoprod-a.akamaihd.net, 微软
 HOST-SUFFIX, skype-edf.akadns.net, 微软
 HOST-SUFFIX, microsoftstore.com.hk, 微软
+HOST-SUFFIX, applicationinsights.io, 微软
+HOST-SUFFIX, applicationinsights.net, 微软
+HOST-SUFFIX, aria.ms, 微软
+HOST-SUFFIX, data.microsoft.com, 微软
 HOST-SUFFIX, dynamics.cn, 微软
 HOST-SUFFIX, engkoo.com, 微软
 HOST-SUFFIX, lync.cn, 微软
@@ -577,6 +578,7 @@ HOST-SUFFIX, powerapps.cn, 微软
 HOST-SUFFIX, powerappsportals.cn, 微软
 HOST-SUFFIX, powerautomate.cn, 微软
 HOST-SUFFIX, powerbi.cn, 微软
+HOST-SUFFIX, telemetry.microsoft.com, 微软
 HOST-SUFFIX, clarity.ms, 微软
 HOST-SUFFIX, microsoftads.com, 微软
 HOST-SUFFIX, msads.net, 微软
@@ -675,6 +677,7 @@ HOST-SUFFIX, chinacloudapi.cn, 微软
 HOST-SUFFIX, chinacloudapp.cn, 微软
 HOST-SUFFIX, chinacloudsites.cn, 微软
 HOST-SUFFIX, hdinsightservices.cn, 微软
+HOST-SUFFIX, in.applicationinsights.azure.com, 微软
 HOST-SUFFIX, management-azure-devices-provisioning.cn, 微软
 HOST-SUFFIX, management-azure-devices.cn, 微软
 HOST-SUFFIX, mcchcdn.com, 微软
@@ -714,6 +717,8 @@ HOST-SUFFIX, azchcdnp.com, 微软
 HOST-SUFFIX, azchcdnq.com, 微软
 HOST-SUFFIX, azchcdnr.com, 微软
 HOST-SUFFIX, azchcdns.com, 微软
+HOST, dc.applicationinsights.azure.com, 微软
+HOST, live.applicationinsights.azure.com, 微软
 HOST-SUFFIX, azure-dns.cn, 微软
 HOST-SUFFIX, azure-dns-1.cn, 微软
 HOST-SUFFIX, azure-dns-2.cn, 微软
@@ -741,4 +746,6 @@ HOST, copilot-telemetry.githubusercontent.com, 微软
 HOST-SUFFIX, microsoftreactor.cn, 微软
 HOST-SUFFIX, microsoftreactor.com.cn, 微软
 HOST-SUFFIX, reactorms.com.cn, 微软
+HOST, dc.services.visualstudio.com, 微软
 HOST, download.visualstudio.microsoft.com, 微软
+HOST, rt.services.visualstudio.com, 微软

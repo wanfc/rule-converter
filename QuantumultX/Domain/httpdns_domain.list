@@ -1,3 +1,4 @@
+HOST, aedns.weixin.qq.com, HTTPDNS
 HOST, api.yuedu.dns.iqiyi.com, HTTPDNS
 HOST, apidns.kwd.inkuai.com, HTTPDNS
 HOST, bj.vip.waf.dns.iqiyi.com, HTTPDNS
@@ -34,6 +35,7 @@ HOST, httpdns.cctv.com, HTTPDNS
 HOST, httpdns.danuoyi.tbcache.com, HTTPDNS
 HOST, httpdns.gslb.yy.com, HTTPDNS
 HOST, httpdns.huaweicloud.com, HTTPDNS
+HOST, httpdns.immomo.com, HTTPDNS
 HOST, httpdns.kg.qq.com, HTTPDNS
 HOST, httpdns.kwd.inkuai.com, HTTPDNS
 HOST, httpdns.meituan.com, HTTPDNS
@@ -54,6 +56,9 @@ HOST, httpdns.yunxinfw.com, HTTPDNS
 HOST, httpdns.zhihu.com, HTTPDNS
 HOST, httpdns.zybang.com, HTTPDNS
 HOST, httpdns1.cc.cdnhwc5.com, HTTPDNS
+HOST, httpdnsmultiapi.meituan.com, HTTPDNS
+HOST, httpdnsmultiapivip.meituan.com, HTTPDNS
+HOST, httpdnsvip.meituan.com, HTTPDNS
 HOST, httpsdns.baidu.com, HTTPDNS
 HOST, iface2.dns.iqiyi.com, HTTPDNS
 HOST, ipv6-static.dns.iqiyi.com, HTTPDNS
@@ -65,15 +70,11 @@ HOST, resolver.gslb.mi-idc.com, HTTPDNS
 HOST, resolver.mi.xiaomi.com, HTTPDNS
 HOST, resolver.msg.global.xiaomi.net, HTTPDNS
 HOST, resolver.msg.xiaomi.net, HTTPDNS
+HOST, resolvers-cn.httpdns.aliyuncs.com, HTTPDNS
 HOST, static.dns.qiyipic.iqiyi.com, HTTPDNS
 HOST, union-httpdns.gslb.yy.com, HTTPDNS
 HOST, v6-data.video.dns.iqiyi.com, HTTPDNS
-HOST, resolvers-cn.httpdns.aliyuncs.com, HTTPDNS
-HOST, httpdnsmultiapi.meituan.com, HTTPDNS
-HOST, httpdnsmultiapivip.meituan.com, HTTPDNS
+HOST, yuyin-httpdns.gslb.yy.com, HTTPDNS
 HOST, dnspod.meituan.httpdns.qcloud.com, HTTPDNS
 HOST, dnspod.meituan.httpdns.start.qcloud.com, HTTPDNS
-HOST, httpdns.immomo.com, HTTPDNS
 HOST-SUFFIX, httpdns.pro, HTTPDNS
-HOST, aedns.weixin.qq.com, HTTPDNS
-HOST, yuyin-httpdns.gslb.yy.com, HTTPDNS

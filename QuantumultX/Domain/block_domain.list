@@ -24105,7 +24105,6 @@ HOST-SUFFIX, datadoghq-browser-agent.com, 广告|阻断
 HOST-SUFFIX, iam-rum-intake.datadoghq.com, 广告|阻断
 HOST-SUFFIX, logs.datadoghq.com, 广告|阻断
 HOST-SUFFIX, datadoghq.eu, 广告|阻断
-HOST-SUFFIX, datadome.co, 广告|阻断
 HOST-SUFFIX, adsmartget.datads.cn, 广告|阻断
 HOST-SUFFIX, datadsk.com, 广告|阻断
 HOST-SUFFIX, datafa.st, 广告|阻断
@@ -30019,7 +30018,7 @@ HOST-SUFFIX, communications.enrouteglobalexchange.com, 广告|阻断
 HOST-SUFFIX, enrtx.com, 广告|阻断
 HOST-SUFFIX, ensealplaners.com, 广告|阻断
 HOST-SUFFIX, enseq50a.xyz, 广告|阻断
-HOST-SUFFIX, ensighten.com, 广告|阻断
+HOST-SUFFIX, nexus.ensighten.com, 广告|阻断
 HOST-SUFFIX, ensmwonhtzpdh.space, 广告|阻断
 HOST-SUFFIX, ensosignal.com, 广告|阻断
 HOST-SUFFIX, metrics.enspryng-hcp.com, 广告|阻断
@@ -36082,7 +36081,6 @@ HOST-SUFFIX, smetrics.gemfinance.co.nz, 广告|阻断
 HOST-SUFFIX, xwpzlz.gemimarket.it, 广告|阻断
 HOST-SUFFIX, geminisailingzillion.com, 广告|阻断
 HOST-SUFFIX, cmp.gemius.com, 广告|阻断
-HOST-SUFFIX, gemius.pl, 广告|阻断
 HOST-SUFFIX, gemlithium.com, 广告|阻断
 HOST-SUFFIX, ovrsso.gemo.fr, 广告|阻断
 HOST-SUFFIX, gemorganic.com, 广告|阻断
@@ -52110,7 +52108,6 @@ HOST-SUFFIX, literallyflickercomplaints.com, 广告|阻断
 HOST-SUFFIX, scdn.literatur-couch.de, 广告|阻断
 HOST-SUFFIX, stats.literaturkreis.online, 广告|阻断
 HOST-SUFFIX, ini.litingxin.cn, 广告|阻断
-HOST-SUFFIX, litix.io, 广告|阻断
 HOST-SUFFIX, link.litnet.com, 广告|阻断
 HOST-SUFFIX, litpzshqdkjvn.online, 广告|阻断
 HOST-SUFFIX, litrujsxxymfn.website, 广告|阻断
@@ -63055,7 +63052,6 @@ HOST-SUFFIX, videos.oms.eu, 广告|阻断
 HOST-SUFFIX, omshedinjaor.com, 广告|阻断
 HOST-SUFFIX, d.omsnative.de, 广告|阻断
 HOST-SUFFIX, omswwmgtqwekb.space, 广告|阻断
-HOST-SUFFIX, omtrdc.net, 广告|阻断
 HOST-SUFFIX, omwvapmytccsc.online, 广告|阻断
 HOST-SUFFIX, omwvtaafvqa.in, 广告|阻断
 HOST-SUFFIX, omxpiremgszzv.space, 广告|阻断
@@ -66832,7 +66828,6 @@ HOST-SUFFIX, placidactivity.com, 广告|阻断
 HOST-SUFFIX, placidityelite.com, 广告|阻断
 HOST-SUFFIX, placiditylever.com, 广告|阻断
 HOST-SUFFIX, placidperson.com, 广告|阻断
-HOST-SUFFIX, pladform.ru, 广告|阻断
 HOST-SUFFIX, hsvrww.plain-me.com, 广告|阻断
 HOST-SUFFIX, plain-plane.com, 广告|阻断
 HOST-SUFFIX, plaincapsize.com, 广告|阻断
@@ -76036,7 +76031,8 @@ HOST-SUFFIX, sefsdvc.com, 广告|阻断
 HOST-SUFFIX, a8clk.segatoys.com, 广告|阻断
 HOST-SUFFIX, nossl.segfault.net, 广告|阻断
 HOST-SUFFIX, stat.segitek.hu, 广告|阻断
-HOST-SUFFIX, segment.com, 广告|阻断
+HOST-SUFFIX, cdn-settings.segment.com, 广告|阻断
+HOST-SUFFIX, mobile-service.segment.com, 广告|阻断
 HOST-SUFFIX, segment.io, 广告|阻断
 HOST-SUFFIX, segmenthub.com, 广告|阻断
 HOST-SUFFIX, segmentify.com, 广告|阻断

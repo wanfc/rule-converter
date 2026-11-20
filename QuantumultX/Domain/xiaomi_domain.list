@@ -1,5 +1,5 @@
 HOST-SUFFIX, xiaomiprint.com, 小米
-HOST-SUFFIX, miot-spec.org, 小米
+HOST-SUFFIX, miwifi.com, 小米
 HOST-SUFFIX, mi-fds.com, 小米
 HOST-SUFFIX, mi-idc.com, 小米
 HOST-SUFFIX, mi-img.com, 小米
@@ -10,7 +10,7 @@ HOST-SUFFIX, mijia.tech, 小米
 HOST-SUFFIX, mioffice.cn, 小米
 HOST-SUFFIX, mitvos.com, 小米
 HOST-SUFFIX, miui.com, 小米
-HOST-SUFFIX, miwifi.com, 小米
+HOST-SUFFIX, mgslb.com, 小米
 HOST-SUFFIX, xiaomi.cn, 小米
 HOST-SUFFIX, xiaomi.com, 小米
 HOST-SUFFIX, xiaomi.net, 小米
@@ -19,14 +19,14 @@ HOST-SUFFIX, xiaomidns.cn, 小米
 HOST-SUFFIX, xiaomidns.com, 小米
 HOST-SUFFIX, xiaomidns.net, 小米
 HOST-SUFFIX, xiaomiev.com, 小米
-HOST-SUFFIX, xiaomisa.com, 小米
+HOST-SUFFIX, xiaomiinc.cn, 小米
 HOST-SUFFIX, xiaomiinc.com, 小米
 HOST-SUFFIX, xiaomiinc.net, 小米
-HOST-SUFFIX, xiaomimobile.com, 小米
-HOST-SUFFIX, xiaominr.com, 小米
 HOST-SUFFIX, mi-dun.com, 小米
-HOST-SUFFIX, mgslb.com, 小米
-HOST-SUFFIX, xiaomiinc.cn, 小米
+HOST-SUFFIX, miot-spec.org, 小米
+HOST-SUFFIX, xiaomimobile.com, 小米
+HOST-SUFFIX, xiaomisa.cn, 小米
+HOST-SUFFIX, xiaomisa.com, 小米
 HOST-SUFFIX, xiaomisa.net, 小米
 HOST-SUFFIX, xiaomisa.org, 小米
 HOST-SUFFIX, xiaomiwear.com, 小米
@@ -40,9 +40,8 @@ HOST-SUFFIX, duokanbox.com, 小米
 HOST-SUFFIX, xiaomiyoupin.com, 小米
 HOST-SUFFIX, youpin.cn, 小米
 HOST-SUFFIX, zmifi.com, 小米
-HOST-SUFFIX, saxyit.com, 小米
-HOST-SUFFIX, xiaomisa.cn, 小米
 HOST-SUFFIX, miaibox.com, 小米
+HOST-SUFFIX, xiaominr.com, 小米
 HOST-SUFFIX, xiaoaiassist.com, 小米
 HOST-SUFFIX, xiaomimimo.com, 小米
 HOST-SUFFIX, xiaomidns.com.cn, 小米
